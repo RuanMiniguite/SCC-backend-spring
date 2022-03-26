@@ -1,13 +1,9 @@
 <!-- ============== HEADER ============== -->
 <div align="center" id="header">
 
-  <a href="https://cachoeiro.ifes.edu.br/">
-    <img src="https://media.discordapp.net/attachments/925719560039043083/925751679519981578/ifes_vila-velha-horizontal-pb.png?width=953&height=294" alt="Logo" width="330">
-  </a>
-  <h3 align="center">SCC backend Spring</h3>
-  <p align="center">
-    Sistema Controle Concessionária 
-  </p>
+  <a href="https://cachoeiro.ifes.edu.br/"><img src="https://media.discordapp.net/attachments/925719560039043083/925751679519981578/ifes_vila-velha-horizontal-pb.png?width=953&height=294" alt="Logo" width="330"></a>
+  <h3>SCC backend Spring</h3>
+  <p>Sistema Controle Concessionária</p>
 </div>
 
 
@@ -93,7 +89,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- ============== LINKs ============== -->
 <!-- Alterar link -->
-[GitHub License-link]: https://github.com/RuanMiniguite/Template-Readme/blob/fe381e528da59c829814c405ef7287b10a1a15ab/LICENSE
+[GitHub License-link]: https://github.com/RuanMiniguite/SCC-backend-spring/blob/f479c14bff9463231113113601afab8222f51a76/LICENSE
 
 
 <!-- Alterar caminho para repositorio [Template-Readme] -->
@@ -101,7 +97,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [GitHub language count-shields]: https://img.shields.io/github/languages/count/RuanMiniguite/SCC-backend-spring?style=for-the-badge
 [GitHub forks-shields]: https://img.shields.io/github/forks/RuanMiniguite/SCC-backend-spring?style=for-the-badge
 
-
+<!-- Shields -->
 [GitHub License-shields]: https://img.shields.io/cocoapods/l/m?down_color=292929&up_color=292929&style=for-the-badge
 [Site-shields]: https://img.shields.io/badge/Site-Live-292929?style=for-the-badge&logo=web&logoColor=white
 [Website-link]: https://github.com/RuanMiniguite/Commit-Message
