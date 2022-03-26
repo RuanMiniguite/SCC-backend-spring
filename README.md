@@ -35,7 +35,7 @@
 <!-- ============== ABOUT ============== -->
 ## Sobre o Projeto
 
-O sistema ....
+O sistema de gerenciamento de concessionária, irá detalhar as finalidades de compra, cancelamento de compras, programa de comissão para funcionários, sistema de revisões sistema de recall e realização de orçamentos para uma concessionária de motos. O objetivo deste sistema é a possibilidade de otimização de tempo durante compras, facilitar o gerenciamento de clientes e gerar uma segurança maior para os processos da concessionária, auxiliando no controle das vendas e facilitando a manutenção dos cadastros necessários para o funcionamento adequado do sistema. 
 
 
 ### Manutenção de Cadastros
@@ -46,17 +46,19 @@ O sistema ....
 > Cadastro Peça
 > Cadastro Funcionario
 > Cadastro Cliente
+> Cadastro nova Recall
+> Taxa de Comissão
 ```
 
 
 ### Processos de Negócio
 
 ```
+> Realizar Orçamento
+> Realizar Venda
 > Realizar Revisão
-> Realizar Venda (Moto)
-> Realizar Venda (Produto)
->  
->
+> Pagamento de comissão para funcionário
+> Realizar Recall
 ```
 
 
