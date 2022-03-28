@@ -77,7 +77,7 @@ O sistema de gerenciamento de concessionária, irá detalhar as finalidades de c
 <!-- ============== LICENSE ============== -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- ============== AUTHOR ============== -->
