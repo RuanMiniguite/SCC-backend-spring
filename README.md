@@ -1,7 +1,7 @@
 <!-- ============== HEADER ============== -->
 <div align="center" id="header">
 
-  <a href="https://cachoeiro.ifes.edu.br/"><img src="https://media.discordapp.net/attachments/925719560039043083/957863776407916654/cachoeiro-horizontal-pb.png?width=356&height=479" alt="Logo" width="100"></a>
+  <a href="https://cachoeiro.ifes.edu.br/"><img src="https://media.discordapp.net/attachments/925719560039043083/957863776407916654/cachoeiro-horizontal-pb.png?width=356&height=479" alt="Logo" width="90"></a>
   
   <h3>SCC backend Spring</h3>
   <p>Sistema Controle Concessionária</p>
@@ -83,7 +83,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- ============== AUTHOR ============== -->
 ## Autores
 
-|[<img alt="Luiz Henrique" src="https://github.com/xZANELLA.png?size=115" width="115"><br><sub>@Luiz Henrique</sub>](https://github.com/xZANELLA)| [<img alt="Natalia" src="https://github.com/nataliap96.png?size=115" width="115"><br><sub>@Natalia</sub>](https://github.com/nataliap96)|[<img alt="Patricia Regina" src="https://github.com/Patricia0123.png?size=115" width="115"><br><sub>@Patricia Regina</sub>](https://github.com/RuanMiniguite)|[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=115" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)| [<img alt="Talis Marchioro" src="https://github.com/TalisTM.png?size=115" width="115"><br><sub>@Talis Marchioro</sub>](https://github.com/TalisTM)|
+|[<img alt="LuizHenrique" src="https://github.com/xZANELLA.png?size=115" width="115"><br><sub>@LuizHenrique</sub>](https://github.com/xZANELLA)| [<img alt="Natalia" src="https://github.com/nataliap96.png?size=115" width="115"><br><sub>@Natalia</sub>](https://github.com/nataliap96)|[<img alt="PatriciaRegina" src="https://github.com/Patricia0123.png?size=115" width="115"><br><sub>@PatriciaRegina</sub>](https://github.com/Patricia0123)|[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=115" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)| [<img alt="Talis Marchioro" src="https://github.com/TalisTM.png?size=115" width="115"><br><sub>@TalisMarchioro</sub>](https://github.com/TalisTM)|
 |:-|:-|:-|:-|:-|
 
 <br>
