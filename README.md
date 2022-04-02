@@ -83,7 +83,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- ============== AUTHOR ============== -->
 ## Autores
 
-|[<img alt="LuizHenrique" src="https://github.com/xZANELLA.png?size=115" width="115"><br><sub>@LuizHenrique</sub>](https://github.com/xZANELLA)| [<img alt="Natalia" src="https://github.com/nataliap96.png?size=115" width="115"><br><sub>@Natalia</sub>](https://github.com/nataliap96)|[<img alt="PatriciaRegina" src="https://github.com/Patricia0123.png?size=115" width="115"><br><sub>@PatriciaRegina</sub>](https://github.com/Patricia0123)|[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=115" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)| [<img alt="Talis Marchioro" src="https://github.com/TalisTM.png?size=115" width="115"><br><sub>@TalisMarchioro</sub>](https://github.com/TalisTM)|
+|[<img alt="LuizHenrique" src="https://github.com/xZANELLA.png?size=300" width="115"><br><sub>@LuizHenrique</sub>](https://github.com/xZANELLA)| [<img alt="Natalia" src="https://github.com/nataliap96.png?size=300" width="115"><br><sub>@Natalia</sub>](https://github.com/nataliap96)|[<img alt="PatriciaRegina" src="https://github.com/Patricia0123.png?size=300" width="115"><br><sub>@PatriciaRegina</sub>](https://github.com/Patricia0123)|[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=300" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)| [<img alt="Talis Marchioro" src="https://github.com/TalisTM.png?size=300" width="115"><br><sub>@TalisMarchioro</sub>](https://github.com/TalisTM)|
 |:-|:-|:-|:-|:-|
 
 <br>
