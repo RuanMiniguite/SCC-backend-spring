@@ -1,7 +1,7 @@
 <!-- ============== HEADER ============== -->
 <div align="center" id="header">
 
-  <a href="https://cachoeiro.ifes.edu.br/"><img src="https://media.discordapp.net/attachments/925719560039043083/957863776407916654/cachoeiro-horizontal-pb.png?width=356&height=479" alt="Logo" width="90"></a>
+  <a href="https://cachoeiro.ifes.edu.br/"><img src="assets/Ifes01.png" alt="Logo" width="90"></a>
   
   <h3>SCC backend Spring</h3>
   <p>Sistema Controle Concessionária</p>
