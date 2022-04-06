@@ -43,12 +43,13 @@ O sistema de gerenciamento de concessionária, irá detalhar as finalidades de c
 
 ```
 > Cadastro Revisão
-> Cadastro Moto
-> Cadastro Peça
+> Cadastro Produto
 > Cadastro Funcionario
 > Cadastro Cliente
-> Cadastro nova Recall
-> Taxa de Comissão
+> Cadastro Nova Recall
+> Cadastro Taxa de Comissão
+> Cadastro Moto
+> Cadastro Modelo Moto
 ```
 
 
@@ -66,11 +67,11 @@ O sistema de gerenciamento de concessionária, irá detalhar as finalidades de c
 ### Relatórios
 
 ```
->
 > 
->
->
->
+> 
+> 
+> 
+> 
 ```
 
 
