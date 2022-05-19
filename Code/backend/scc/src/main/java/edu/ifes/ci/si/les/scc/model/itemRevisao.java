@@ -1,6 +1,8 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class itemRevisao {
+import java.io.Serializable;
+
+public class itemRevisao implements Serializable{
 
 	private String nome;
 

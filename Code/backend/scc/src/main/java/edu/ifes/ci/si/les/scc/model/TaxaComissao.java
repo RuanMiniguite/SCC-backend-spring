@@ -1,6 +1,8 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class TaxaComissao {
+import java.io.Serializable;
+
+public class TaxaComissao implements Serializable{
 
 	private Integer codTaxaComissao;
 

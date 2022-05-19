@@ -1,6 +1,9 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class Venda {
+import java.io.Serializable;
+import java.util.Date;
+
+public class Venda implements Serializable{
 
 	private Integer codVenda;
 

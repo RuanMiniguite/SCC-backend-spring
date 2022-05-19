@@ -1,6 +1,8 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class TipoMoto {
+import java.io.Serializable;
+
+public class TipoMoto implements Serializable{
 
 	private Integer codTipo;
 

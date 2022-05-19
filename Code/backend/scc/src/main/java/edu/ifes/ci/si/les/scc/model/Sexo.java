@@ -1,6 +1,8 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class Sexo {
+import java.io.Serializable;
+
+public class Sexo implements Serializable{
 
 	private Integer MASCULINO;
 

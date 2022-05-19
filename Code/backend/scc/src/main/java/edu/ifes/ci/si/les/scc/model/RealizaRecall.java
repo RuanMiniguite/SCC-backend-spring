@@ -1,6 +1,9 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class RealizaRecall {
+import java.io.Serializable;
+import java.util.Date;
+
+public class RealizaRecall implements Serializable{
 
 	private Integer codRealizarRecall;
 

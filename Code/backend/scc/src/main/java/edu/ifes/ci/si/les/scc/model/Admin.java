@@ -1,6 +1,8 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class Admin {
+import java.io.Serializable;
+
+public class Admin implements Serializable{
 
 	private Integer FUNCIONARIO;
 

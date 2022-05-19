@@ -1,6 +1,8 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class Produto {
+import java.io.Serializable;
+
+public class Produto implements Serializable{
 
 	private Integer codProduto;
 

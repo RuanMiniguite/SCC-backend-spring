@@ -1,6 +1,9 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class Funcionario {
+import java.io.Serializable;
+import java.util.Date;
+
+public class Funcionario implements Serializable{
 
 	private Integer codFuncionario;
 

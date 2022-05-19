@@ -1,6 +1,8 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class Status {
+import java.io.Serializable;
+
+public class Status implements Serializable{
 
 	private Integer REALIZADO;
 

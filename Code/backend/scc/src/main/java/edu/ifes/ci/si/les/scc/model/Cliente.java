@@ -1,6 +1,8 @@
 package edu.ifes.ci.si.les.scc.model;
 
-public class Cliente {
+import java.io.Serializable;
+
+public class Cliente implements Serializable{
 
 	private Integer codCliente;
 
