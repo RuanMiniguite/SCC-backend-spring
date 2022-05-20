@@ -2,7 +2,11 @@ package edu.ifes.ci.si.les.scc.model;
 
 import java.io.Serializable;
 
+import edu.ifes.ci.si.les.scc.model.enums.Pessoa;
+
 public class Cliente implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 
 	private Integer codCliente;
 
