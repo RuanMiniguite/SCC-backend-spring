@@ -64,19 +64,5 @@ public class Cliente implements Serializable{
 	
 	@Digits(integer=1, fraction=0, message = "Valor NULL no pessoa")
 	private Pessoa pessoa;
-	
-//    @Builder
-//    public Cliente(Integer codCliente, String nome, String cpf, String email, String telefone, String estado, String cep, String cidade, String bairro, Pessoa pessoa) {
-//    	this.codCliente = codCliente;
-//    	this.nome = nome;
-//        this.cpf = cpf;
-//        this.email = email;
-//        this.telefone = telefone;
-//        this.estado = estado;
-//        this.cep = cep;
-//        this.cidade = cidade;
-//        this.bairro = bairro;
-//		this.pessoa = (pessoa==null) ? null : pessoa.getCod();
-//    }
-    
+	    
 }
