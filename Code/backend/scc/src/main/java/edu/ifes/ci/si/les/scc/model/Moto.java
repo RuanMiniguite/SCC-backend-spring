@@ -46,6 +46,7 @@ public class Moto implements Serializable{
 	
 	@NotBlank(message = "Valor da cilindrada deve ser preenchido")
     @Digits(integer=2, fraction=2, message = "Valor da cilindrada deve ser preenchido com um valor decimal")
+	@Min(value = 1, message = "Valor da cilindrada deve ser maior que zero")
 	private Double cc;
 	
 	@Column(length = 50)
@@ -55,6 +56,7 @@ public class Moto implements Serializable{
 	
 	@NotBlank(message = "Valor da Moto deve ser preenchido")
     @Digits(integer=2, fraction=2, message = "Valor da Moto deve ser preenchido com um valor decimal")
+	@Min(value = 1, message = "Valor da Moto deve ser maior que zero")
 	private Double valor;
 	
 	@Column(length = 25)

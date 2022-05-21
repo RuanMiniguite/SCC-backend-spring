@@ -80,6 +80,7 @@ public class Funcionario implements Serializable{
 	
 	@NotBlank(message = "Valor do Salário deve ser preenchido")
     @Digits(integer=6, fraction=2, message = "Valor do Salário deve ser preenchido com dígitos")
+	@Min(value = 1, message = "Valor do Salário deve ser maior que zero")
 	private Double salario;
 	
 	@Digits(integer=1, fraction=0, message = "Valor NULL no admin")

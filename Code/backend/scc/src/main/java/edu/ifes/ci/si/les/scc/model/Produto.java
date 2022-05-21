@@ -3,7 +3,6 @@ package edu.ifes.ci.si.les.scc.model;
 import java.io.Serializable;
 import lombok.*;
 import javax.persistence.*;
-import javax.validation.constraints.Digits;
 import javax.validation.constraints.*;
 
 @Entity
@@ -34,6 +33,7 @@ public class Produto implements Serializable{
 	private Double valor;
 	
 	@Digits(integer=1, fraction=0, message = "A quantidade do Produto deve ser preenchido com um valor inteiro")
+	@Min(value = 0, message = "A quantidade em estoque deve ser maior que 0 (Zero)")
 	private Integer qtd;
 
 }

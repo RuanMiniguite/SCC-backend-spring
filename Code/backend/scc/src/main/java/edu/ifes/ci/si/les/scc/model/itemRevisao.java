@@ -26,6 +26,7 @@ public class itemRevisao implements Serializable{
 
 	@NotBlank(message = "Valor Unitario deve ser preenchido")
     @Digits(integer=6, fraction=2, message = "Valor Unitario deve ser preenchido com dígitos")
+	@Min(value = 1, message = "Valor do produto deve ser maior que zero")
 	private Double valorUnitario;
 	
 	@Digits(integer=1, fraction=0, message = "A quantidade do Produto deve ser preenchido com um valor inteiro")

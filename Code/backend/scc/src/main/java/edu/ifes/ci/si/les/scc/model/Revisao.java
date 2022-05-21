@@ -24,6 +24,7 @@ public class Revisao implements Serializable{
     @JsonFormat(pattern = "yyyy-MM-dd")
 	private Date data;
 	
+	@Min(value = 0, message = "O valor da revisão não pode ser menor que 0 (Zero)")
 	@NotBlank(message = "Valor da revisão deve ser preenchido")
     @Digits(integer=6, fraction=2, message = "Valor da revisão deve ser preenchido com dígitos")
 	private Double valor;
