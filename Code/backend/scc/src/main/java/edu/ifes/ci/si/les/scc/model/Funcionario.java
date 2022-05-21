@@ -38,7 +38,7 @@ public class Funcionario implements Serializable{
     @Pattern(regexp="(d{2})\\d{5}-\\d{4}", message = "O Telefone do funcionário deve seguir o padrão (NN)NNNNN-NNNN") 
 	private String telefone;
 	
-	@NotBlank(message = "Nascimento do Cliente deve ser preenchido")
+	@NotBlank(message = "Nascimento do Funcionário deve ser preenchido")
     @JsonFormat(pattern = "yyyy-MM-dd")
 	private Date dataNascimento;
 	
