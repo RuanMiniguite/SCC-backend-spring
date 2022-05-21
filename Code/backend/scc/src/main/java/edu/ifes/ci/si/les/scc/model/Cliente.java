@@ -26,13 +26,13 @@ public class Cliente implements Serializable{
 	
 	@Column(length = 50)
     @NotBlank(message = "CPF do cliente deve ser preenchido")
-    @Size(min = 2, max = 50, message = "CPF do cliente deve ter entre 2 e 50 letras")
+    @Size(min = 2, max = 50, message = "CPF do cliente deve ter entre 2 e 50 Numeros")
     @Pattern(regexp="\\d{3}.\\d{3}.\\d{3}-\\d{2}", message = "CPF do cliente deve seguir o padrão NNN.NNN.NNN-NN")
 	private String cpf;
 	
 	@Column(length = 50)
-    @NotBlank(message = "Nome do cliente deve ser preenchido")
-    @Size(min = 2, max = 50, message = "Nome do cliente deve ter entre 2 e 50 letras")
+    @NotBlank(message = "O E-mail deve ser preenchido")
+    @Size(min = 2, max = 50, message = "Nome do E-mail deve ter entre 2 e 50 letras")
 	private String email;
 	
 	@Column(length = 25)
