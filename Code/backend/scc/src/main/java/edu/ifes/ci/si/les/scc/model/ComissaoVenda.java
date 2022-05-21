@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.Date;
 import lombok.*;
 import javax.persistence.*;
+import javax.validation.constraints.*;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Data
@@ -17,15 +20,22 @@ public class ComissaoVenda implements Serializable{
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer codComissaoVenda;
-
+	
+	@NotBlank(message = "A data de Inicio do período do calculo da Comissão Venda deve ser preenchido")
+    @JsonFormat(pattern = "yyyy-MM-dd")
 	private Date dataIni;
-
+	
+	@NotBlank(message = "A data de Fim do período do calculo da Comissão Venda deve ser preenchido")
+    @JsonFormat(pattern = "yyyy-MM-dd")
 	private Date dataFim;
-
+	
+	@NotBlank(message = "Valor Total deve ser preenchido")
+    @Digits(integer=6, fraction=2, message = "Valor Total deve ser preenchido com dígitos")
 	private Double valorTotal;
-
+	
 	private Boolean pago;
 	
+	@NotNull(message = "A taxa de comissão deve ser preenchido")
 	@ManyToOne
 	@JoinColumn(name="codTaxaComissao")
 	private TaxaComissao taxaComissao;
