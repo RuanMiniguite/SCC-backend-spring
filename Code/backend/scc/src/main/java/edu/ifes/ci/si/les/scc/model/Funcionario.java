@@ -74,8 +74,8 @@ public class Funcionario implements Serializable{
 	private String senha;
     
 	@Column(length = 25)
-	@NotBlank(message = "Nome do Estado deve ser preenchido")
-	@Size(min = 2, max = 25, message = "Nome do Estado deve ter entre 2 e 25 letras")
+	@NotBlank(message = "O cargo deve ser preenchido")
+	@Size(min = 2, max = 25, message = "O cargo deve ter entre 2 e 25 letras")
 	private String cargo;
 	
 	@NotBlank(message = "Valor do Salário deve ser preenchido")
