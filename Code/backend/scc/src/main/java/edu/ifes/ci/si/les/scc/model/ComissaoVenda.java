@@ -25,9 +25,13 @@ public class ComissaoVenda implements Serializable{
 	private Double valorTotal;
 
 	private Boolean pago;
-
+	
+	@ManyToOne
+	@JoinColumn(name="codTaxaComissao")
 	private TaxaComissao taxaComissao;
-
+	
+	@OneToOne
+	@JoinColumn(name="codVenda")
 	private Venda venda;
 
 }

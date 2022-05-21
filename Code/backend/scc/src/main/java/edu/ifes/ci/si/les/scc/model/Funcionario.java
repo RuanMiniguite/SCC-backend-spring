@@ -5,6 +5,8 @@ import java.util.Date;
 import javax.persistence.*;
 import edu.ifes.ci.si.les.scc.model.enums.Admin;
 import lombok.*;
+import javax.validation.constraints.*;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Data
@@ -18,31 +20,69 @@ public class Funcionario implements Serializable{
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer codFuncionario;
-
+	
+	@Column(length = 50)
+    @NotBlank(message = "Nome do Funcionário deve ser preenchido")
+    @Size(min = 2, max = 50, message = "Nome do funcionário deve ter entre 2 e 50 letras")
 	private String name;
-
+	
+	@Column(length = 50)
+    @NotBlank(message = "CPF do Funcionário deve ser preenchido")
+    @Size(min = 2, max = 50, message = "CPF do funcionário deve ter entre 2 e 50 letras")
+    @Pattern(regexp="\\d{3}.\\d{3}.\\d{3}-\\d{2}", message = "CPF do funcionário deve seguir o padrão NNN.NNN.NNN-NN")
 	private String cpf;
-
+	
+	@Column(length = 25)
+    @NotBlank(message = "O Telefone do Funcionário deve ser preenchido")
+    @Size(min = 9, max = 15, message = "O Telefone do Funcionário deve ter 9 caracteres")
+    @Pattern(regexp="(d{2})\\d{5}-\\d{4}", message = "O Telefone do funcionário deve seguir o padrão (NN)NNNNN-NNNN") 
 	private String telefone;
-
+	
+	@NotBlank(message = "Nascimento do Cliente deve ser preenchido")
+    @JsonFormat(pattern = "yyyy-MM-dd")
 	private Date dataNascimento;
-
+	
+	@Column(length = 25)
+	@NotBlank(message = "Nome do Estado deve ser preenchido")
+	@Size(min = 2, max = 25, message = "Nome do Estado deve ter entre 2 e 25 letras")
 	private String estado;
-
+	
+	@Column(length = 25)
+    @NotBlank(message = "O CEP do Funcionário deve ser preenchido")
+    @Size(min = 8, max = 10, message = "O CEP do Funcionário deve ter 9 caracteres")
+    @Pattern(regexp="\\d{5}-\\d{3}", message = "CPF do funcionário deve seguir o padrão NNNNN-NNN") 
 	private String cep;
-
+	
+	@Column(length = 50)
+	@NotBlank(message = "Nome da Cidade deve ser preenchido")
+	@Size(min = 2, max = 50, message = "Nome da Cidade deve ter entre 2 e 50 letras")
 	private String cidade;
-
+	
+	@Column(length = 50)
+	@NotBlank(message = "Nome do Bairro deve ser preenchido")
+	@Size(min = 2, max = 50, message = "Nome do Bairro deve ter entre 2 e 50 letras")
 	private String bairro;
-
+	
+	@Column(length = 20)
+    @NotBlank(message = "Login do Funcionário deve ser preenchido")
+    @Size(min = 2, max = 50, message = "Login do Funcionário deve ter entre 2 e 20 caracteres")
 	private String login;
-
+	
+    @Column(length = 20)
+    @NotBlank(message = "Senha do Funcionário deve ser preenchida")
+    @Size(min = 6, max = 10, message = "Senha do Funcionário deve ter entre 6 e 20 caracteres")
 	private String senha;
-
+    
+	@Column(length = 25)
+	@NotBlank(message = "Nome do Estado deve ser preenchido")
+	@Size(min = 2, max = 25, message = "Nome do Estado deve ter entre 2 e 25 letras")
 	private String cargo;
-
+	
+	@NotBlank(message = "Valor do Salário deve ser preenchido")
+    @Digits(integer=6, fraction=2, message = "Valor do Salário deve ser preenchido com dígitos")
 	private Double salario;
-
+	
+	@Digits(integer=1, fraction=0, message = "Valor NULL no admin")
 	private Admin admin;
 
 }

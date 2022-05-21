@@ -25,14 +25,16 @@ public class Venda implements Serializable{
 	private Boolean pago;
 
 	private Double desconto;
-
+	
+	@ManyToOne
+	@JoinColumn(name="codCliente")
 	private Cliente cliente;
 	
 	@ManyToOne
 	@JoinColumn(name="codFuncionario")
 	private Funcionario funcionario;
 	
-	@ManyToOne
+	@OneToOne
 	@JoinColumn(name="codMoto")
 	private Moto moto;
 
