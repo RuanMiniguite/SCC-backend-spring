@@ -3,10 +3,7 @@ package edu.ifes.ci.si.les.scc.model;
 import java.io.Serializable;
 import lombok.*;
 import javax.persistence.*;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
-
+import javax.validation.constraints.*;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
