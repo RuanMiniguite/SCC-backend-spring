@@ -40,8 +40,8 @@ public class Moto implements Serializable{
 	private String cor;
 	
 	@Column(length = 50)
-    @NotBlank(message = "A cor deve ser preenchido")
-    @Size(min = 2, max = 50, message = "A cor deve ter entre 2 e 50 letras")
+    @NotBlank(message = "A combustivel deve ser preenchido")
+    @Size(min = 2, max = 50, message = "A combustivel deve ter entre 2 e 50 letras")
 	private String combustivel;
 	
 	@NotBlank(message = "Valor da cilindrada deve ser preenchido")
