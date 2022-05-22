@@ -21,15 +21,15 @@ public class ComissaoVenda implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer codComissaoVenda;
 	
-	@NotBlank(message = "A data de Inicio do período do calculo da Comissão Venda deve ser preenchido")
+	@NotNull(message = "A data de Inicio do período do calculo da Comissão Venda deve ser preenchido")
     @JsonFormat(pattern = "yyyy-MM-dd")
 	private Date dataIni;
 	
-	@NotBlank(message = "A data de Fim do período do calculo da Comissão Venda deve ser preenchido")
+	@NotNull(message = "A data de Fim do período do calculo da Comissão Venda deve ser preenchido")
     @JsonFormat(pattern = "yyyy-MM-dd")
 	private Date dataFim;
 	
-	@NotBlank(message = "Valor Total deve ser preenchido")
+	@NotNull(message = "Valor Total deve ser preenchido")
     @Digits(integer=6, fraction=2, message = "Valor Total deve ser preenchido com dígitos")
 	private Double valorTotal;
 	

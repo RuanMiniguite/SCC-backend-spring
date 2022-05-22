@@ -20,17 +20,17 @@ public class Venda implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer codVenda;
 	
-	@NotBlank(message = "Data da venda ser preenchida")
+	@NotNull(message = "Data da venda ser preenchida")
     @JsonFormat(pattern = "yyyy-MM-dd")
 	private Date data;
 	
-	@NotBlank(message = "O valor da venda deve ser preenchido")
+	@NotNull(message = "O valor da venda deve ser preenchido")
 	@Digits(integer=6, fraction=2, message = "O valor da venda deve ser preenchido com dígitos")
 	private Double valor;
 
 	private Boolean pago;
 	
-	@NotBlank(message = "O valor do desconto deve ser preenchido")
+	@NotNull(message = "O valor do desconto deve ser preenchido")
 	@Digits(integer=6, fraction=2, message = "O valor do desconto deve ser preenchido com dígitos")
 	private Double desconto;
 	

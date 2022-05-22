@@ -23,32 +23,32 @@ public class Recall implements Serializable{
 	private Integer codRecall;
 	
 	@Column(length = 50)
-	@NotBlank(message = "Nome do recall deve ser preenchido")
+	@NotNull(message = "Nome do recall deve ser preenchido")
 	@Size(min = 2, max = 50, message = "Nome do produto deve ter entre 2 e 50 letras")
 	private String nome;
 	
-	@NotBlank(message = "Data de cadastro do recall ser preenchida")
+	@NotNull(message = "Data de cadastro do recall ser preenchida")
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date dataCadastro;
 	
 	@Column(length = 50)
-	@NotBlank(message = "O chassi inicial deve ser preenchido")
+	@NotNull(message = "O chassi inicial deve ser preenchido")
 	@Size(min = 2, max = 50, message = "O chassi inicial deve ter entre 2 e 50 letras e numeros")
 	private String chassiIni;
 
 	@Column(length = 50)
-	@NotBlank(message = "O chassi final deve ser preenchido")
+	@NotNull(message = "O chassi final deve ser preenchido")
 	@Size(min = 2, max = 50, message = "O chassi final deve ter entre 2 e 50 letras e numeros")
 	private String chassiFim;
 	
 	@Digits(integer=4, fraction=0, message = "O ano do modelo deve ser preenchido com um valor inteiro")
 	private Integer anoModelo;
 	
-	@NotBlank(message = "Data inicial ser preenchida")
+	@NotNull(message = "Data inicial ser preenchida")
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date dataIni;
 	
-	@NotBlank(message = "Data final ser preenchida")
+	@NotNull(message = "Data final ser preenchida")
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date dataFim;
 	

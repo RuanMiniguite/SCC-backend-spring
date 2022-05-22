@@ -19,7 +19,7 @@ public class TipoMoto implements Serializable{
 	private Integer codTipo;
 	
 	@Column(length = 50)
-    @NotBlank(message = "O tipo da moto deve ser preenchido")
+    @NotNull(message = "O tipo da moto deve ser preenchido")
     @Size(min = 2, max = 50, message = "Nome do tipo moto deve ter entre 2 e 50 letras")
 	private String nome;
 

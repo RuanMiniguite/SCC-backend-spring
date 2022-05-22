@@ -19,12 +19,12 @@ public class Moto implements Serializable{
 	private Integer codMoto;
 	
 	@Column(length = 50)
-    @NotBlank(message = "O modelo deve ser preenchido")
+    @NotNull(message = "O modelo deve ser preenchido")
     @Size(min = 2, max = 50, message = "O modelo deve ter entre 2 e 50 letras")
 	private String modelo;
 	
 	@Column(length = 50)
-    @NotBlank(message = "A marca deve ser preenchido")
+    @NotNull(message = "A marca deve ser preenchido")
     @Size(min = 2, max = 50, message = "A marca deve ter entre 2 e 50 letras")
 	private String marca;
 	
@@ -35,32 +35,32 @@ public class Moto implements Serializable{
 	private Integer anoModelo;
 	
 	@Column(length = 50)
-    @NotBlank(message = "A cor deve ser preenchido")
+    @NotNull(message = "A cor deve ser preenchido")
     @Size(min = 2, max = 50, message = "A cor deve ter entre 2 e 50 letras")
 	private String cor;
 	
 	@Column(length = 50)
-    @NotBlank(message = "A combustivel deve ser preenchido")
+    @NotNull(message = "A combustivel deve ser preenchido")
     @Size(min = 2, max = 50, message = "A combustivel deve ter entre 2 e 50 letras")
 	private String combustivel;
 	
-	@NotBlank(message = "Valor da cilindrada deve ser preenchido")
-    @Digits(integer=2, fraction=2, message = "Valor da cilindrada deve ser preenchido com um valor decimal")
+	@NotNull(message = "Valor da cilindrada deve ser preenchido")
+    @Digits(integer=4, fraction=2, message = "Valor da cilindrada deve ser preenchido com um valor decimal")
 	@Min(value = 1, message = "Valor da cilindrada deve ser maior que zero")
 	private Double cc;
 	
 	@Column(length = 50)
-    @NotBlank(message = "O chassi deve ser preenchido")
+    @NotNull(message = "O chassi deve ser preenchido")
     @Size(min = 2, max = 50, message = "O chassi deve ter entre 2 e 50 letras e numeros")
 	private String chassi;
 	
-	@NotBlank(message = "Valor da Moto deve ser preenchido")
-    @Digits(integer=2, fraction=2, message = "Valor da Moto deve ser preenchido com um valor decimal")
+	@NotNull(message = "Valor da Moto deve ser preenchido")
+    @Digits(integer=6, fraction=2, message = "Valor da Moto deve ser preenchido com um valor decimal")
 	@Min(value = 1, message = "Valor da Moto deve ser maior que zero")
 	private Double valor;
 	
 	@Column(length = 25)
-    @NotBlank(message = "A placa deve ser preenchido")
+    @NotNull(message = "A placa deve ser preenchido")
 	@Size(min = 6, max = 8, message = "A placa da moto deve ter 7 caracteres")
 	private String placa;
 	

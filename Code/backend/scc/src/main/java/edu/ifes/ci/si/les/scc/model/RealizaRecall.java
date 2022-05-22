@@ -5,7 +5,6 @@ import java.util.Date;
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import lombok.*;
-import edu.ifes.ci.si.les.scc.model.enums.Status;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
@@ -21,12 +20,12 @@ public class RealizaRecall implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer codRealizarRecall;
 	
-	@NotBlank(message = "A data da realização do recall deve existir")
+	@NotNull(message = "A data da realização do recall deve existir")
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date data;
 	
 	@Digits(integer=1, fraction=0, message = "Valor NULL no admin")
-	private Status status;
+	private Integer status;
 	
 	@ManyToOne
 	@JoinColumn(name="codMoto")
