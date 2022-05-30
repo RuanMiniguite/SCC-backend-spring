@@ -1,0 +1,52 @@
+header img{
+  height: 40px;
+  margin: 0 20px;
+}
+
+header h1{
+  color: var(--cor-primary);
+  letter-spacing: 3px;
+}
+
+main aside li a {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+main aside li a:hover {
+  background-color: var(--cor-action);
+}
+
+main aside li a.ativo {
+  background-color: var(--cor-button);
+}
+
+
+.social-media a{
+  font-size: 1.7rem;
+  color: var(--cor-primary);
+  margin: 2px;
+}
+
+.social-media a:hover{
+  color: var(--cor-action);
+}
+
+header button{
+  height: 50px;
+  width: 70px;
+  right: 0;
+  position: absolute;
+  border: none;
+  color: var(--cor-action);
+  font-size: medium;
+  background-color: white;
+}
+
+header button:hover{
+  background-color: var(--cor-action);
+  color: var(--cor-primary);
+}

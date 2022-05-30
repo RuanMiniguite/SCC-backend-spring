@@ -1,0 +1,57 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --cor-primary:      #FFFFFF;
+  --cor-secundary:    #2C2E3E;
+  --cor-button:       #34374C;
+  --cor-action:       #EE2B47;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+
+  font-family: 'Balsamiq Sans', cursive;
+
+  display: grid;
+  grid-template-columns: 200px calc(100vw - 200px);
+  grid-template-rows: 50px calc(100vh - 200px) 150px;
+  grid-template-areas: 
+    "h h"
+    "a s"
+    "f f"
+  ;
+}
+
+header{
+  grid-area: h;
+  background-color: #EE2B47;
+  display: flex;
+  align-items: center;
+}
+
+aside{
+  grid-area: a;
+  background-color: #2C2E3E;
+  height: 100%;
+}
+
+section{
+  grid-area: s;
+  background-color: #F6F6F6;
+}
+
+footer{
+  grid-area: f;
+  background-color: #34374C;
+  color: var(--cor-primary);
+  text-align: center;
+  padding-top: 40px;
+}
