@@ -41,6 +41,7 @@ aside{
   grid-area: a;
   background-color: #2C2E3E;
   height: 100%;
+  overflow-y: scroll;
 }
 
 section{
