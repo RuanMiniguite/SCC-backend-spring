@@ -6,9 +6,10 @@ header img{
 header h1{
   color: var(--cor-primary);
   letter-spacing: 3px;
+  font-size: 1.5rem;
 }
 
-main aside li a {
+aside li a {
   display: inline-block;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -16,14 +17,18 @@ main aside li a {
   width: 100%;
 }
 
-main aside li a:hover {
+aside li i {
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+aside li a:hover {
   background-color: var(--cor-action);
 }
 
-main aside li a.ativo {
+aside li a.ativo {
   background-color: var(--cor-button);
 }
-
 
 .social-media a{
   font-size: 1.7rem;
@@ -36,17 +41,88 @@ main aside li a.ativo {
 }
 
 header button{
-  height: 50px;
+  height: 35px;
   width: 70px;
   right: 0;
+  margin-right: 10px;
   position: absolute;
   border: none;
   color: var(--cor-action);
   font-size: medium;
-  background-color: white;
+  background-color: var(--cor-button);
+  border-radius: 10px;
 }
 
 header button:hover{
-  background-color: var(--cor-action);
+  background-color: var(--cor-primary);
+  color: var(--cor-button);
+}
+
+.sectionMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logoMain{
+  width: 250px;
+  margin-left: -150px;
+}
+
+
+
+
+/* Form  */
+.titleForm{
+  font-size: 3rem;
+  text-align: center;
+  margin: 25px auto;
+  text-transform: uppercase;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form :not(hr){
+  margin-left: calc(50vw - 700px /2);
+}
+
+input{
+  background: transparent;
+  min-height: 35px;
+  width: 500px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  padding: 0em 0.5em 0em 0.5em;
+
+}
+
+label{
+  font-size: 0.9rem;
+  color: black;
+} 
+
+hr{
+  margin: 10px 0px;
+}
+
+.btn-submit{
+  width: 200px;
   color: var(--cor-primary);
+  font-size: .9rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  background-color: var(--cor-secundary);
+  border: 1px solid var(--cor-secundary);
+  padding: .7rem 3rem;
+  cursor: pointer;
+  transition: color 0.5s;
+  margin-top: 2rem;
+}
+
+.btn-submit:hover{
+  background-color: var(--cor-action);
+  border: 1px solid var(--cor-action);
 }

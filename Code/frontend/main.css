@@ -41,12 +41,14 @@ aside{
   grid-area: a;
   background-color: #2C2E3E;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 section{
   grid-area: s;
   background-color: #F6F6F6;
+  padding-bottom: 2rem;
+  overflow-y: scroll;
 }
 
 footer{
@@ -54,5 +56,9 @@ footer{
   background-color: #34374C;
   color: var(--cor-primary);
   text-align: center;
-  padding-top: 40px;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }

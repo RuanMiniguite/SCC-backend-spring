@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/ico" href="img/Icon.ico">
         <title>Funcionário</title>
     </head>
     <body>
@@ -13,36 +14,114 @@
         <header>
             <a href="index.html"><img src="img/Logo_White.png" alt="Logo Honda"></a>
             <h1>SCC</h1>
-
             <button>Entra</button>
         </header>
         
-
-        <main>
-            <aside>
-                <nav>
-                    <ul>
-                        <li><a href="#" class="ativo"><i class="fas fa-user"></i> Funcionário</a></li>
-                        <li><a href="#"><i class="far fa-user"></i> Cliente</a></li>
-                        <li><a href="#"> Recall</a></li>
-                        <li><a href="#">Moto</a></li>
-                        <li><a href="#">Produto</a></li>
-                        <li><a href="#">Taxa</a></li>
-                        <li><a href="#">Venda</a></li>
-                        <li><a href="#">Revisão</a></li>
-                        <li><a href="#">Comissão</a></li>
-                        <li><a href="#">Realizar Recall</a></li>
-                        <li><a href="#">Relatório 1</a></li>
-                        <li><a href="#">Relatório 2</a></li>
-                        <li><a href="#">Relatório 3</a></li>
-                        <li><a href="#">Relatório 4</a></li>
-                    </ul>
-                </nav>
-            </aside>
-            
-            <section></section>
-        </main>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#" class="ativo"><i class="fas fa-user"></i> Funcionário</a></li>
+                    <li><a href="#"><i class="far fa-user"></i> Cliente</a></li>
+                    <li><a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Recall</a></li>
+                    <li><a href="#"><i class="fa fa-motorcycle" aria-hidden="true"></i></i> Moto</a></li>
+                    <!-- <li><a href="#">Produto</a></li>
+                    <li><a href="#">Taxa</a></li>
+                    <li><a href="#">Venda</a></li>
+                    <li><a href="#">Revisão</a></li>
+                    <li><a href="#">Comissão</a></li>
+                    <li><a href="#">Realizar Recall</a></li>
+                    <li><a href="#">Relatório 1</a></li>
+                    <li><a href="#">Relatório 2</a></li>
+                    <li><a href="#">Relatório 3</a></li>
+                    <li><a href="#">Relatório 4</a></li> -->
+                </ul>
+            </nav>
+        </aside>
         
+        <section>
+            <h1 class="titleForm">Funcionário</h1>
+            
+            <form action="https://webhook.site/ff5c5e27-6a7b-464d-96c9-e9e7eba66bd0" method="post">
+
+                <label for="txtNomeCompleto">Nome Completo</label>
+                <input type="text" name="NomeCompleto" id="txtNomeCompleto" placeholder="Digite aqui o nome" size="20" maxlength="20" autocomplete="off" required><br>
+
+                <label for="txtCpf">CPF</label>
+                <input type="text" name="cpf" id="txtCpf" placeholder="Digite aqui o cpf" autocomplete="off" required><br>
+
+                <label for="txtTelefone">Telefone</label>
+                <input type="text" name="telefone" id="txtTelefone" placeholder="Digite aqui o telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" required><br>
+
+                <label for="dtNascimento">Data de Nascimento</label>
+                <input type="date" name="DataNascimento" id="dtNascimento" min="1900-01-01" max="2022-12-31" required><br>
+
+                <hr>
+
+                <label for="txtEstado">Estado</label>
+                <input type="text" name="Estado" id="txtEstado" list="estado" placeholder="Informe Estado" required><br>
+                <datalist id="estado">
+                    <option value="AC"></option>
+                    <option value="AL"></option>
+                    <option value="AP"></option>
+                    <option value="AM"></option>
+                    <option value="BA"></option>
+                    <option value="CE"></option>
+                    <option value="DF"></option>
+                    <option value="ES"></option>
+                    <option value="GO"></option>
+                    <option value="MA"></option>
+                    <option value="MT"></option>
+                    <option value="MS"></option>
+                    <option value="MG"></option>
+                    <option value="PA"></option>
+                    <option value="PB"></option>
+                    <option value="PR"></option>
+                    <option value="PE"></option>
+                    <option value="PI"></option>
+                    <option value="RJ"></option>
+                    <option value="RN"></option>
+                    <option value="RS"></option>
+                    <option value="RO"></option>
+                    <option value="RR"></option>
+                    <option value="SC"></option>
+                    <option value="SP"></option>
+                    <option value="SE"></option>
+                    <option value="TO"></option>
+                </datalist>
+
+                <label for="txtCep">Cep</label>
+                <input type="text" name="cep" id="txtCep" placeholder="Digite aqui o cep" pattern="[0-9]{5}-[0-9]{3}" required><br>
+
+                <label for="txtCidade">Cidade</label>
+                <input type="text" name="Cidade" id="txtCidade" placeholder="Digite aqui a cidade" title="Digite aqui a cidade!" required><br>
+
+                <label for="txtBairro">Bairro</label>
+                <input type="text" name="Bairro" id="txtBairro" placeholder="Digite aqui o bairro" title="Digite aqui o bairro!" required><br>
+
+                <hr>
+                
+                <label for="txtEmail">E-mail</label>
+                <input type="email" name="Email" id="txtEmail" placeholder="Digite aqui o E-mail" required><br>
+
+                <label for="txtSenha">Senha</label>
+                <input type="password" name="Senha" id="txtSenha" placeholder="Digite aqui a Senha" pattern="[0-9]{5}" required><br>
+
+                <label for="txtCargo">Cargo</label>
+                <input type="text" name="Cargo" id="txtCargo" list="cargo" placeholder="Informe Cargo" required><br>
+                <datalist id="cargo">
+                    <option value="Gerente"></option>
+                    <option value="Vendedor"></option>
+                    <option value="Mecânico"></option>
+                    <option value="Outro"></option>
+                </datalist>
+                
+                <label for="txtSalario">Salario</label>
+                <input type="text" id="txtSalario" name="Salario" placeholder="Digite aqui o salario" required>
+
+                <button type="submit" class="btn-submit">Salva</button>
+            </form>
+        </section>
+    
         
         <footer>
             <p>Copyright &copy; <b>Honda/SCC</b> 2022</p><br>
