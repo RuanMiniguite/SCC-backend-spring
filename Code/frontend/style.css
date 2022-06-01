@@ -123,3 +123,8 @@ hr{
   background-color: var(--cor-action);
   border: 1px solid var(--cor-action);
 }
+
+#Chkvendida{
+  min-height: 20px;
+  width: 90px;
+}
