@@ -22,7 +22,7 @@ body{
 
   display: grid;
   grid-template-columns: 200px calc(100vw - 200px);
-  grid-template-rows: 50px calc(100vh - 200px) 150px;
+  grid-template-rows: 50px calc(100vh - 100px) 50px;
   grid-template-areas: 
     "h h"
     "a s"
