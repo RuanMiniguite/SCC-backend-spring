@@ -135,6 +135,7 @@ public class _DBService {
         ItemRevisao ItemRevisao2 = new ItemRevisao(revisao2, produto3, 30.00, 1);
         
         revisao1.setItens(Arrays.asList(ItemRevisao1));
+        revisao2.setItens(Arrays.asList(ItemRevisao2));
         
         tipoMotoRepository.saveAll(Arrays.asList(tipoMoto1, tipoMoto2, tipoMoto3, tipoMoto4, tipoMoto5));
         taxaComissaoRepository.saveAll(Arrays.asList(taxaComissao1, taxaComissao2));
@@ -147,6 +148,5 @@ public class _DBService {
         recallRepository.saveAll(Arrays.asList(recall1, recall2));
         realizaRecallRepository.saveAll(Arrays.asList(realizaRecall, realizaRecal2));
         revisaoRepository.saveAll(Arrays.asList(revisao1, revisao2));
-        itemrevisaoRepository.saveAll(Arrays.asList(ItemRevisao1, ItemRevisao2));
 	}
 }
