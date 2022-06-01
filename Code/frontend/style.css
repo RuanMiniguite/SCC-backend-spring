@@ -40,12 +40,20 @@ aside li a.ativo {
   color: var(--cor-action);
 }
 
-header button{
+header .btnLogout {
   height: 35px;
   width: 70px;
   right: 0;
   margin-right: 10px;
   position: absolute;
+
+}
+
+header button{
+  height: 35px;
+  width: 70px;
+  right: 0;
+  margin-right: 15px;
   border: none;
   color: var(--cor-action);
   font-size: medium;

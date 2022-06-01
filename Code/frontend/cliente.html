@@ -14,7 +14,7 @@
         <header>
             <a href="index.html"><img src="img/Logo_White.png" alt="Logo Honda"></a>
             <h1>SCC</h1>
-            <button>Entrar</button>
+            <a href="login.html" class="btnLogout"><button>Logout</button></a>
         </header>
         
         <aside>
@@ -31,7 +31,7 @@
         <section>
             <h1 class="titleForm">Cliente</h1>
             
-            <form action="https://webhook.site/ff5c5e27-6a7b-464d-96c9-e9e7eba66bd0" method="post">
+            <form action="https://webhook.site/6cfd7449-c5a8-4e30-ae09-7be8ebfc2650" method="post">
 
                 <label for="txtNomeCompleto">Nome Completo</label>
                 <input type="text" name="NomeCompleto" id="txtNomeCompleto" placeholder="Digite aqui o nome" size="20" maxlength="20" autocomplete="off" required><br>
@@ -44,14 +44,13 @@
                 </datalist>
                 
                 <label for="txtCpf">CPF</label>
-                <input type="text" name="cpf" id="txtCpf" placeholder="Digite aqui o cpf" autocomplete="off" required><br>
+                <input type="text" name="cpf" id="txtCpf" placeholder="Digite aqui o cpf somente numeros" autocomplete="off" required><br>
 
                 <label for="txtTelefone">Telefone</label>
-                <input type="text" name="telefone" id="txtTelefone" placeholder="Digite aqui o telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" required><br>
+                <input type="text" name="telefone" id="txtTelefone" placeholder="Digite no formato (xx)xxxxx-xxxx" pattern="\(\[0-9]{2}\)\ [0-9]{4,6}-[0-9]{3,4}$" required><br>
 
                 <label for="txtEmail">Email</label>
                 <input type="text" name="email" id="txtEmail" placeholder="Digite aqui o seu email" autocomplete="off" required><br>
-
 
                 <br>
 
@@ -88,7 +87,7 @@
                 </datalist>
 
                 <label for="txtCep">Cep</label>
-                <input type="text" name="cep" id="txtCep" placeholder="Digite aqui o cep" pattern="[0-9]{5}-[0-9]{3}" required><br>
+                <input type="text" name="cep" id="txtCep" placeholder="Digite no formato xxxxx-xxx" pattern="[0-9]{5}-[0-9]{3}" required><br>
 
                 <label for="txtCidade">Cidade</label>
                 <input type="text" name="Cidade" id="txtCidade" placeholder="Digite aqui a cidade" title="Digite aqui a cidade!" required><br>
