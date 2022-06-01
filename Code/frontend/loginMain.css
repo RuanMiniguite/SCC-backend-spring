@@ -43,3 +43,7 @@ section{
   padding-bottom: 2rem;
   overflow-y: scroll;
 }
+
+.login{
+  margin-left: 10vw;
+}

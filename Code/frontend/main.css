@@ -28,6 +28,8 @@ body{
     "a s"
     "f f"
   ;
+
+  overflow: hidden;
 }
 
 header{
@@ -41,7 +43,6 @@ aside{
   grid-area: a;
   background-color: #2C2E3E;
   height: 100%;
-  overflow-y: hidden;
 }
 
 section{
@@ -49,6 +50,7 @@ section{
   background-color: #F6F6F6;
   padding-bottom: 2rem;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 footer{
