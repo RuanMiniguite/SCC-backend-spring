@@ -24,7 +24,6 @@ import edu.ifes.ci.si.les.scc.model.Venda;
 import edu.ifes.ci.si.les.scc.repositories.ClienteRepository;
 import edu.ifes.ci.si.les.scc.repositories.ComissaoVendaRepository;
 import edu.ifes.ci.si.les.scc.repositories.FuncionarioRepository;
-import edu.ifes.ci.si.les.scc.repositories.ItemRevisaoRepository;
 import edu.ifes.ci.si.les.scc.repositories.MotoRepository;
 import edu.ifes.ci.si.les.scc.repositories.ProdutoRepository;
 import edu.ifes.ci.si.les.scc.repositories.RealizaRecallRepository;
@@ -46,9 +45,6 @@ public class _DBService {
 	
 	@Autowired
     private FuncionarioRepository funcionarioRepository;
-	
-	@Autowired
-    private ItemRevisaoRepository itemrevisaoRepository;
 	
 	@Autowired
     private MotoRepository motoRepository;
