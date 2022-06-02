@@ -23,3 +23,4 @@
 2022-05-19 22:30:42,385 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-05-19 22:30:42,386 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ruanm\OneDrive\Área de Trabalho\scc\src\test\resources
 2022-05-19 22:30:48,688 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.ifes.ci.si.les.scc:scc:0.0.1-SNAPSHOT @ C:\Users\ruanm\OneDrive\Área de Trabalho\scc\pom.xml.
+2022-06-01 21:59:49,986 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
