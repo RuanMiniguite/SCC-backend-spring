@@ -48,7 +48,7 @@ public class Cliente implements Serializable{
 	@Column(length = 25)
     @NotNull(message = "O CEP do cliente deve ser preenchido")
     @Size(min = 8, max = 10, message = "O CEP do cliente deve ter 9 caracteres")
-    @Pattern(regexp="\\d{5}-\\d{3}", message = "CPF do cliente deve seguir o padrão NNNNN-NNN") 
+    @Pattern(regexp="\\d{5}-\\d{3}", message = "CEP do cliente deve seguir o padrão NNNNN-NNN") 
 	private String cep;
 	
 	@Column(length = 50)
