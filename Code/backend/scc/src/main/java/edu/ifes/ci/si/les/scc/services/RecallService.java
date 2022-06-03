@@ -12,53 +12,55 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
-import edu.ifes.ci.si.les.scc.model.Cliente;
-import edu.ifes.ci.si.les.scc.repositories.ClienteRepository;
+import edu.ifes.ci.si.les.scc.model.Recall;
+import edu.ifes.ci.si.les.scc.repositories.RecallRepository;
 import edu.ifes.ci.si.les.scc.services.exceptions.DataIntegrityException;
 import edu.ifes.ci.si.les.scc.services.exceptions.ObjectNotFoundException;
 
 @Service
-public class ClienteService {
+public class RecallService {
 
     @Autowired
-    private ClienteRepository repository;
+    private RecallRepository repository;
 
-    public Cliente findById(Integer id) {
-        Cliente obj = repository.findById(id).get();
+    public Recall findById(Integer id) {
+        Recall obj = repository.findById(id).get();
         if (obj == null) {
-            throw new ObjectNotFoundException("Objeto não encontrado! Id: " + id + ", Tipo: " + Cliente.class.getName());
+            throw new ObjectNotFoundException("Objeto não encontrado! Id: " + id + ", Tipo: " + Recall.class.getName());
         }
         return obj;
     }
 
-    public Collection<Cliente> findAll() {
+    public Collection<Recall> findAll() {
         return repository.findAll();
     }
 
-    public Cliente insert(Cliente obj) {
-    	obj.setCodCliente(null);
+    public Recall insert(Recall obj) {
+    	obj.setCodRecall(null);
         try {
         	return repository.save(obj);
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Campo(s) obrigatório(s) do Cliente não foi(foram) preenchido(s)");
+            throw new DataIntegrityException("Campo(s) obrigatório(s) do Recall não foi(foram) preenchido(s)");
         }
     }
 
-    public Cliente update(Cliente obj) {
-    	findById(obj.getCodCliente());
+    public Recall update(Recall obj) {
+    	findById(obj.getCodRecall());
         try {
         	return repository.save(obj);
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Campo(s) obrigatório(s) do Cliente não foi(foram) preenchido(s)");
+            throw new DataIntegrityException("Campo(s) obrigatório(s) do Recall não foi(foram) preenchido(s)");
         }
     }
-    
+
     public void delete(Integer id) {
         findById(id);
         try {
             repository.deleteById(id);
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Não é possível excluir este Cliente!");
+            throw new DataIntegrityException("Não é possível excluir este Recall!");
         }
     }
+
 }
+

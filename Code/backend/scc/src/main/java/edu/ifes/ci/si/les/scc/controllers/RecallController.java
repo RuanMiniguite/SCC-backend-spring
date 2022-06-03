@@ -19,31 +19,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.ifes.ci.si.les.scc.model.Cliente;
-import edu.ifes.ci.si.les.scc.services.ClienteService;
+import edu.ifes.ci.si.les.scc.model.Recall;
+import edu.ifes.ci.si.les.scc.services.RecallService;
 import edu.ifes.ci.si.les.scc.services.exceptions.ConstraintException;
 
 @RestController
-@RequestMapping(value = "/clientes")
-public class ClienteController {
+@RequestMapping(value = "/recall")
+public class RecallController {
 
     @Autowired
-    private ClienteService service;
+    private RecallService service;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<Collection<Cliente>> findAll() {
-        Collection<Cliente> collection = service.findAll();
+    public ResponseEntity<Collection<Recall>> findAll() {
+        Collection<Recall> collection = service.findAll();
         return ResponseEntity.ok().body(collection);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<Cliente> find(@PathVariable Integer id) {
-        Cliente obj = service.findById(id);
+    public ResponseEntity<Recall> find(@PathVariable Integer id) {
+    	Recall obj = service.findById(id);
         return ResponseEntity.ok().body(obj);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<Cliente> insert(@Valid @RequestBody Cliente obj, BindingResult br) {
+    public ResponseEntity<Recall> insert(@Valid @RequestBody Recall obj, BindingResult br) {
         if (br.hasErrors())
         	throw new ConstraintException(br.getAllErrors().get(0).getDefaultMessage());
         obj = service.insert(obj);
@@ -51,7 +51,7 @@ public class ClienteController {
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Cliente> update(@Valid @RequestBody Cliente obj, BindingResult br) {
+    public ResponseEntity<Recall> update(@Valid @RequestBody Recall obj, BindingResult br) {
         if (br.hasErrors())
         	throw new ConstraintException(br.getAllErrors().get(0).getDefaultMessage());
         obj = service.update(obj);
@@ -65,3 +65,4 @@ public class ClienteController {
     }
 
 }
+
