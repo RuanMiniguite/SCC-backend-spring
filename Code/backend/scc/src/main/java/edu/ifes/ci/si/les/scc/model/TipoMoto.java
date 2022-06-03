@@ -1,3 +1,9 @@
+//Autor
+//------------------------------
+//Ruan Pezzin Miniguite
+//20181si018
+//------------------------------
+
 package edu.ifes.ci.si.les.scc.model;
 
 import java.io.Serializable;

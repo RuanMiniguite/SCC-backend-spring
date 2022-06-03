@@ -42,7 +42,7 @@ public class FuncionarioService {
         try {
         	return repository.save(obj);
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Campo(s) obrigatório(s) do Funcionário não foi(foram) preenchido(s): Bairro");
+            throw new DataIntegrityException("Campo(s) obrigatório(s) do Funcionário não foi(foram) preenchido(s).");
         }
     }
 
@@ -51,7 +51,7 @@ public class FuncionarioService {
         try {
         	return repository.save(obj);
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Campo(s) obrigatório(s) do Funcionário não foi(foram) preenchido(s): Bairro");
+            throw new DataIntegrityException("Campo(s) obrigatório(s) do Funcionário não foi(foram) preenchido(s).");
         }
     }
 
