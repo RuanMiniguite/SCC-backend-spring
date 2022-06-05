@@ -1,3 +1,9 @@
+//Autor
+//------------------------------
+//Luiz Henrique Cabral
+//20181si021
+//------------------------------
+
 package edu.ifes.ci.si.les.scc.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;

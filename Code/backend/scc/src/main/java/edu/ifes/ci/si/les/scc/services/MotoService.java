@@ -1,3 +1,9 @@
+//Autor
+//------------------------------
+//Luiz Henrique Cabral
+//20181si021
+//------------------------------
+
 package edu.ifes.ci.si.les.scc.services;
 
 import java.util.Collection;
@@ -52,7 +58,7 @@ public class MotoService {
         try {
         	motoRepository.deleteById(codMoto);
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Não é possível excluir uma Moto vinculada a Itens de Empréstimos!");
+            throw new DataIntegrityException("Não é possível excluir uma Moto vinculada a uma Venda!");
         }
     }
 
