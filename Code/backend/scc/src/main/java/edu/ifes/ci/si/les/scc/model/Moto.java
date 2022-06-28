@@ -68,8 +68,7 @@ public class Moto implements Serializable{
 	@ManyToOne
 	@JoinColumn(name="codTipo")
 	private TipoMoto tipoMoto;
-	
-	@NotNull(message = "O cliente deve ser preenchido")
+
 	@ManyToOne
 	@JoinColumn(name="codCliente")
 	private Cliente cliente;
