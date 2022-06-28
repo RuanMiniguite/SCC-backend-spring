@@ -96,6 +96,7 @@ public class _DBService {
         
         Cliente cliente1 = new Cliente(null, "Ruan Miniguite", "111.111.111-11", "Ruanminiguite@gmail.com", "(28)99918-3529", "Espirito Santo", "29295-000", "Vargem alta", "Pombal de Cima", 0);
         Cliente cliente2 = new Cliente(null, "Pedro Miniguite", "222.222.222-22", "Pedrominiguite@gmail.com", "(28)99912-1292", "Espirito Santo", "29295-000", "Vargem alta", "São josé de fruteiras", 1);
+        Cliente cliente3 = new Cliente(null, "Alberto Ricado", "017.268.037-98", "AlbertoRicado@gmail.com", "(27)99865-9856", "Espirito Santo", "95689-000", "Pedra Azul", "Águas Vermelhas", 0);
         
         
         Funcionario funcionario1 = new Funcionario (null, "Alberto Ricado", "017.268.037-98", "(27)99865-9856", sdf.parse("2000-04-01"), "Espirito Santo", "95689-000", "Pedra Azul", "Águas Vermelhas", "AlbertoR", "123456", "Vendedor", 2500.66, 1);
@@ -105,6 +106,7 @@ public class _DBService {
 	    
 	    Moto moto1 = new Moto(null, "Biz 110i", "Honda", 2011, 2011, "Vermelha", "Gasolina", 109.01, "TL0001", 16000.00, "ABC1B34", tipoMoto1, cliente1);
         Moto moto2 = new Moto(null, "XRE 300", "Honda", 2021, 2021, "Preta", "Gasolina", 291.6, "TL0035", 22000.00, "DGT1B34", tipoMoto2, cliente2);
+        Moto moto3 = new Moto(null, "Bross 160", "Honda", 2020, 2021, "Branca", "Gasolina", 159.01, "TL0007", 20000.00, "ABD1B33", tipoMoto1, null);
 	    
         
         Venda venda1 = new Venda(null, sdf.parse("2022-03-07"), 16000.00, true, 150.00, cliente1, funcionario2, moto1);
@@ -137,8 +139,8 @@ public class _DBService {
         taxaComissaoRepository.saveAll(Arrays.asList(taxaComissao1, taxaComissao2));
         produtoRepository.saveAll(Arrays.asList(produto1, produto2, produto3));
         funcionarioRepository.saveAll(Arrays.asList(funcionario1, funcionario2, funcionario3));
-        clienteRepository.saveAll(Arrays.asList(cliente1, cliente2));
-        motoRepository.saveAll(Arrays.asList(moto1, moto2));
+        clienteRepository.saveAll(Arrays.asList(cliente1, cliente2, cliente3));
+        motoRepository.saveAll(Arrays.asList(moto1, moto2, moto3));
         vendaRepository.saveAll(Arrays.asList(venda1, venda2));
         comissaoVendaRepository.saveAll(Arrays.asList(comissaoVenda1, comissaoVenda2));
         recallRepository.saveAll(Arrays.asList(recall1, recall2));
