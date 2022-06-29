@@ -128,6 +128,7 @@ public class _DBService {
         RealizaRecall realizaRecal2= new RealizaRecall(null, "2022-05-21", 0, moto2, recall1);
         RealizaRecall realizaRecal3= new RealizaRecall(null, "2022-05-21", 0, moto3, recall1);
         RealizaRecall realizaRecal4= new RealizaRecall(null, "2022-05-21", 0, moto4, recall1);
+        RealizaRecall realizaRecal5= new RealizaRecall(null, "2022-05-20", 0, moto5, recall1);
 
         Revisao revisao1 = new Revisao(null, sdf.parse("2022-05-01"), 795.25, funcionario1, moto1);
         Revisao revisao2 = new Revisao(null, sdf.parse("2022-05-03"), 356.00, funcionario1, moto2);
@@ -148,7 +149,7 @@ public class _DBService {
         vendaRepository.saveAll(Arrays.asList(venda1, venda2));
         comissaoVendaRepository.saveAll(Arrays.asList(comissaoVenda1, comissaoVenda2));
         recallRepository.saveAll(Arrays.asList(recall1, recall2));
-        realizaRecallRepository.saveAll(Arrays.asList(realizaRecall, realizaRecal2, realizaRecal3, realizaRecal4));
+        realizaRecallRepository.saveAll(Arrays.asList(realizaRecall, realizaRecal2, realizaRecal3, realizaRecal4, realizaRecal5));
         revisaoRepository.saveAll(Arrays.asList(revisao1, revisao2));
 	}
 }

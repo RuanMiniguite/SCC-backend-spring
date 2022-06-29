@@ -46,7 +46,6 @@ public class RealizarRecallService {
         		obj.setCodRealizarRecall(null);
         		return repository.save(obj);
         	}
-        	
         } catch (DataIntegrityViolationException e) {
             throw new DataIntegrityException("Campo(s) obrigatório(s) da realização do Recall não foi(foram) preenchido(s)");
         }
@@ -55,6 +54,7 @@ public class RealizarRecallService {
 
     public RealizaRecall update(RealizaRecall obj) {
     	findById(obj.getCodRealizarRecall());
+    	
         try {
         	return repository.save(obj);
         } catch (DataIntegrityViolationException e) {
