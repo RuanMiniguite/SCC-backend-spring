@@ -107,7 +107,10 @@ public class _DBService {
 	    Moto moto1 = new Moto(null, "Biz 110i", "Honda", 2011, 2011, "Vermelha", "Gasolina", 109.01, "TL0001", 16000.00, "ABC1B34", tipoMoto1, cliente1);
         Moto moto2 = new Moto(null, "XRE 300", "Honda", 2021, 2021, "Preta", "Gasolina", 291.6, "TL0035", 22000.00, "DGT1B34", tipoMoto2, cliente2);
         Moto moto3 = new Moto(null, "Bross 160", "Honda", 2020, 2021, "Branca", "Gasolina", 159.01, "TL0007", 20000.00, "ABD1B33", tipoMoto1, null);
-	    
+        Moto moto4 = new Moto(null, "Biz 110i", "Honda", 2014, 2014, "Vermelha", "Gasolina", 109.01, "TL0002", 16000.00, "ABC1B34", tipoMoto1, cliente1);
+        Moto moto5 = new Moto(null, "XRE 300", "Honda", 2015, 2015, "Preta", "Gasolina", 291.6, "TL0004", 22000.00, "DGT1B34", tipoMoto2, cliente3);
+        Moto moto6 = new Moto(null, "Bross 160", "Honda", 2010, 2010, "Branca", "Gasolina", 159.01, "TL0005", 20000.00, "ABD1B33", tipoMoto1, cliente3);
+
         
         Venda venda1 = new Venda(null, sdf.parse("2022-03-07"), 16000.00, true, 150.00, cliente1, funcionario2, moto1);
         Venda venda2 = new Venda(null, sdf.parse("2022-03-13"), 22000.00, false, 100.00, cliente2, funcionario3, moto2);
@@ -121,10 +124,11 @@ public class _DBService {
         Recall recall2 = new Recall(null, "Recall Velas", sdf.parse("2022-05-15"),"HR0001", "HR0100", 2019, sdf.parse("2022-03-01"), sdf.parse("2022-04-01"), funcionario2);
         
         
-        RealizaRecall realizaRecall= new RealizaRecall(null, sdf.parse("2022-05-21"), 0, moto1, recall1);
-        RealizaRecall realizaRecal2= new RealizaRecall(null, sdf.parse("2022-05-21"), 1, moto2, recall1);
-        
-        
+        RealizaRecall realizaRecall= new RealizaRecall(null, "2022-05-21", 0, moto1, recall1);
+        RealizaRecall realizaRecal2= new RealizaRecall(null, "2022-05-21", 0, moto2, recall1);
+        RealizaRecall realizaRecal3= new RealizaRecall(null, "2022-05-21", 0, moto3, recall1);
+        RealizaRecall realizaRecal4= new RealizaRecall(null, "2022-05-21", 0, moto4, recall1);
+
         Revisao revisao1 = new Revisao(null, sdf.parse("2022-05-01"), 795.25, funcionario1, moto1);
         Revisao revisao2 = new Revisao(null, sdf.parse("2022-05-03"), 356.00, funcionario1, moto2);
         
@@ -140,11 +144,11 @@ public class _DBService {
         produtoRepository.saveAll(Arrays.asList(produto1, produto2, produto3));
         funcionarioRepository.saveAll(Arrays.asList(funcionario1, funcionario2, funcionario3));
         clienteRepository.saveAll(Arrays.asList(cliente1, cliente2, cliente3));
-        motoRepository.saveAll(Arrays.asList(moto1, moto2, moto3));
+        motoRepository.saveAll(Arrays.asList(moto1, moto2, moto3, moto4, moto5, moto6));
         vendaRepository.saveAll(Arrays.asList(venda1, venda2));
         comissaoVendaRepository.saveAll(Arrays.asList(comissaoVenda1, comissaoVenda2));
         recallRepository.saveAll(Arrays.asList(recall1, recall2));
-        realizaRecallRepository.saveAll(Arrays.asList(realizaRecall, realizaRecal2));
+        realizaRecallRepository.saveAll(Arrays.asList(realizaRecall, realizaRecal2, realizaRecal3, realizaRecal4));
         revisaoRepository.saveAll(Arrays.asList(revisao1, revisao2));
 	}
 }

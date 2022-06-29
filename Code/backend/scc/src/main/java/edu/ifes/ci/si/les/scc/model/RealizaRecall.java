@@ -22,7 +22,7 @@ public class RealizaRecall implements Serializable{
 	
 	@NotNull(message = "A data da realização do recall deve existir")
 	@JsonFormat(pattern = "yyyy-MM-dd")
-	private Date data;
+	private String data;
 	
 	@Digits(integer=1, fraction=0, message = "Valor NULL no admin")
 	private Integer status;

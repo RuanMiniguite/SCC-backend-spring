@@ -73,25 +73,23 @@ public class RealizarRecallService {
 
     public boolean verificarRegrasDeNegocio(RealizaRecall obj) {
     	   
-    	Collection<RealizaRecall> recall= repository.findByRecallRealizado(obj.getMoto().getCodMoto());
-   		boolean recallsRealizar = false;	
+    	Collection<RealizaRecall> recall = repository.findByRecallRealizado(obj.getMoto().getCodMoto(), obj.getRecall().getCodRecall());
+    	Collection<RealizaRecall> quatidade_recall = repository.findByQuatidadeRecalls(obj.getData());
+    	boolean recallsRealizar = false;	
  
    		if(recall.size() > 0) {
-   			throw new BusinessRuleException("Este cliente já tem o Recall Realizado!");
-   			
+   			throw new BusinessRuleException("Esta moto já possui recall cadastrado! !");
    		}else {
    			recallsRealizar = true;
    		}
    		
-   		return true;
+   		if(quatidade_recall.size() > 3) {
+   			throw new BusinessRuleException("Quantidade de Recalls excedida no data!");
+   		}else {
+   			recallsRealizar = true;
+   		}
+   			
+   		return recallsRealizar;
    		
-//   		if(recallsRealizar) {
-//   			return true;
-//   		}else {
-//   			return false;
-//   		}
     }
 }
-
-
-
