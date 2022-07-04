@@ -92,4 +92,8 @@ public class Funcionario implements Serializable{
 	@Digits(integer=1, fraction=0, message = "Valor NULL no admin")
 	private Integer admin;
 
+	@NotNull(message = "Data de admissão do Funcionário deve ser preenchida")
+	@JsonFormat(pattern = "yyyy-MM-dd")
+	private Date dataAdmissao;
+
 }

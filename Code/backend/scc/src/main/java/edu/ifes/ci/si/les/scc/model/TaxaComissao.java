@@ -1,3 +1,6 @@
+//Author
+// Natalia Pitanga
+
 package edu.ifes.ci.si.les.scc.model;
 
 import java.io.Serializable;

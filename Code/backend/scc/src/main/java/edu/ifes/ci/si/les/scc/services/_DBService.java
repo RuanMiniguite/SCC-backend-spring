@@ -99,9 +99,9 @@ public class _DBService {
         Cliente cliente3 = new Cliente(null, "Alberto Ricado", "017.268.037-98", "AlbertoRicado@gmail.com", "(27)99865-9856", "Espirito Santo", "95689-000", "Pedra Azul", "Águas Vermelhas", 0);
         
         
-        Funcionario funcionario1 = new Funcionario (null, "Alberto Ricado", "017.268.037-98", "(27)99865-9856", sdf.parse("2000-04-01"), "Espirito Santo", "95689-000", "Pedra Azul", "Águas Vermelhas", "AlbertoR", "123456", "Vendedor", 2500.66, 1);
-	    Funcionario funcionario2 = new Funcionario (null, "Marcos Bravim", "968.569.787-45", "(27)99999-9786", sdf.parse("1998-10-12"), "Espirito Santo", "29500-000", "Cachoeiro de Itapemirim", "Agostinho Simonato", "MarcosB", "789123", "Vendedor", 1856.44, 0);
-	    Funcionario funcionario3 = new Funcionario (null, "Mariana Ribeiro", "896.146.195-78", "(28)97896-9789", sdf.parse("1989-07-07"), "Espirito Santo", "29300-000", " Cachoeiro de Itapemirim", "Santo Antonio", "MarianaR", "456321", "Gerente", 4500.50, 0);
+        Funcionario funcionario1 = new Funcionario (null, "Alberto Ricado", "017.268.037-98", "(27)99865-9856", sdf.parse("2000-04-01"), "Espirito Santo", "95689-000", "Pedra Azul", "Águas Vermelhas", "AlbertoR", "123456", "Vendedor", 2500.66, 1, sdf.parse("2015-01-01"));
+	    Funcionario funcionario2 = new Funcionario (null, "Marcos Bravim", "968.569.787-45", "(27)99999-9786", sdf.parse("1998-10-12"), "Espirito Santo", "29500-000", "Cachoeiro de Itapemirim", "Agostinho Simonato", "MarcosB", "789123", "Vendedor", 1856.44, 0, sdf.parse("2018-01-01"));
+	    Funcionario funcionario3 = new Funcionario (null, "Mariana Ribeiro", "896.146.195-78", "(28)97896-9789", sdf.parse("1989-07-07"), "Espirito Santo", "29300-000", " Cachoeiro de Itapemirim", "Santo Antonio", "MarianaR", "456321", "Gerente", 4500.50, 0, sdf.parse("2020-01-01"));
 	    
 	    
 	    Moto moto1 = new Moto(null, "Biz 110i", "Honda", 2011, 2011, "Vermelha", "Gasolina", 109.01, "TL0001", 16000.00, "ABC1B34", tipoMoto1, cliente1);
