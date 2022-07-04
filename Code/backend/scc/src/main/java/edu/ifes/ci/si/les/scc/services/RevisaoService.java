@@ -62,7 +62,7 @@ public class RevisaoService {
         		return repository.save(result);
         	}
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Campo(s) obrigatório(s) da venda não foi(foram) preenchido(s).");
+            throw new DataIntegrityException("Campo(s) obrigatório(s) da revisão não foi(foram) preenchido(s).");
         }
         return null;
     }
@@ -78,7 +78,7 @@ public class RevisaoService {
 			}
         	return repository.save(obj);
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Campo(s) obrigatório(s) da venda não foi(foram) preenchido(s).");
+            throw new DataIntegrityException("Campo(s) obrigatório(s) da revisão não foi(foram) preenchido(s).");
         }
     }
 
@@ -87,7 +87,7 @@ public class RevisaoService {
         try {
             repository.deleteById(id);
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Não é possível excluir esta venda!");
+            throw new DataIntegrityException("Não é possível excluir essa revisão!");
         }
     }
  
