@@ -25,4 +25,5 @@ public interface RevisaoRepository extends JpaRepository<Revisao, Integer>{
 	@Transactional(readOnly = true)
 	@Query(value = "SELECT COUNT(*), FROM revisao INNER JOIN ITEM_REVISAO ON REVISAO.COD_REVISAO=ITEM_REVISAO.REVISAO_ID INNER JOIN produto ON produto.ID =ITEM_REVISAO.PRODUTO_ID WHERE revisao.cod_moto = ?1 and produto.nome='Óleo Lubrificante';", nativeQuery = true)
 	public Optional<Integer> countTrocaOleo(Integer codMoto);
+	
 }

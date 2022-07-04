@@ -19,6 +19,7 @@ import edu.ifes.ci.si.les.scc.model.Produto;
 import edu.ifes.ci.si.les.scc.model.Revisao;
 import edu.ifes.ci.si.les.scc.model.Venda;
 import edu.ifes.ci.si.les.scc.repositories.MotoRepository;
+import edu.ifes.ci.si.les.scc.repositories.ProdutoRepository;
 import edu.ifes.ci.si.les.scc.repositories.RevisaoRepository;
 import edu.ifes.ci.si.les.scc.repositories.VendaRepository;
 import edu.ifes.ci.si.les.scc.services.exceptions.DataIntegrityException;
@@ -32,6 +33,8 @@ public class RevisaoService {
     private MotoRepository motoRepository;
     @Autowired
     private VendaRepository vendaRepository;
+    @Autowired
+    private ProdutoRepository produtoRepository;
     
 
     public Revisao findById(Integer id) {
@@ -114,7 +117,11 @@ public class RevisaoService {
    		Integer qtdTrocaOleo = repository.countTrocaOleo(moto.getCodMoto()).get();
    		
    		if(qtdTrocaOleo < 3 && !revisaoGratis) {
-   			
+   			Collection<Integer> idOleos = produtoRepository.getProdutosByNome();
+//   			for (Integer oleo : idOleos) {
+//   				System.out.println("\n\n\n *******" + oleo);
+//   			}
+//   			
    			Double descontoOleo = 0.00;
 		
 			for (ItemRevisao item : obj.getItens()) {

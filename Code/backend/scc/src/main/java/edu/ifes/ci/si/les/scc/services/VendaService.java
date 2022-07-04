@@ -50,7 +50,6 @@ public class VendaService {
         return repository.findAll();
     }
      
-    
     public Venda insert(Venda obj) {
         try {
         	if(verificarRegrasDeNegocio(obj)) {
@@ -62,8 +61,6 @@ public class VendaService {
         }
         return null;
     }
-
-    
     
     public Venda update(Venda obj) {
         findById(obj.getCodVenda());
@@ -82,7 +79,6 @@ public class VendaService {
             throw new DataIntegrityException("Não é possível excluir esta venda!");
         }
     }
- 
  
    	public boolean verificarRegrasDeNegocio(Venda obj) {
    
