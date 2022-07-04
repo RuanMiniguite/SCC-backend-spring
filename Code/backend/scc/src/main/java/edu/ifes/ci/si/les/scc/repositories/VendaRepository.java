@@ -7,6 +7,7 @@
 package edu.ifes.ci.si.les.scc.repositories;
 
 import java.util.Collection;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -26,4 +27,8 @@ public interface VendaRepository extends JpaRepository<Venda, Integer>{
 	@Query(value = "SELECT venda.* FROM venda WHERE venda.cod_cliente = ?1", nativeQuery = true)
 	public Collection<Venda> findByCliente(Integer cod_cliente);
 	
+	@Transactional(readOnly = true)
+	@Query(value = "SELECT venda.* FROM VENDA WHERE COD_MOTO = 1", nativeQuery = true)
+	public Optional<Venda> findByCodMoto(Integer codMoto);
+
 }

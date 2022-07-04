@@ -1,3 +1,9 @@
+//Autor
+//------------------------------
+//Luiz Henrique Cabral
+//20181si021
+//------------------------------
+
 package edu.ifes.ci.si.les.scc.model;
 
 import java.io.Serializable;
@@ -13,14 +19,14 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = {"id"})
+@EqualsAndHashCode(of = {"codRevisao"})
 public class Revisao implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Integer codRevisao;
 	
 	@NotNull(message = "A data da Revisão deve ser preenchido")
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -42,13 +48,12 @@ public class Revisao implements Serializable{
 	private Moto moto;
 	
     @NotNull(message = "A revisão deve possuir pelo menos um Item de Revisão")
-    //orphanRemoval = true: utilizado para remover filhos (itens) sem pai (empréstimo) em caso de atualizaçao do empréstimo (para um número de itens menor que o anterior)
     @OneToMany(mappedBy = "id.revisao", cascade = CascadeType.ALL, orphanRemoval = true)
     private Collection<ItemRevisao> itens = new ArrayList<>();
     
     @Builder
-    public Revisao(Integer id, Date data, Double valor, Funcionario funcionario, Moto moto) {
-        this.id = id;
+    public Revisao(Integer codRevisao, Date data, Double valor, Funcionario funcionario, Moto moto) {
+        this.codRevisao = codRevisao;
         this.data = data;
         this.valor = valor;
         this.funcionario = funcionario;
