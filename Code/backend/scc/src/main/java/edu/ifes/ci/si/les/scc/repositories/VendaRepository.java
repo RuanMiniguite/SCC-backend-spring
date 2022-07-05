@@ -28,7 +28,7 @@ public interface VendaRepository extends JpaRepository<Venda, Integer>{
 	public Collection<Venda> findByCliente(Integer cod_cliente);
 	
 	@Transactional(readOnly = true)
-	@Query(value = "SELECT venda.* FROM VENDA WHERE COD_MOTO = 1", nativeQuery = true)
+	@Query(value = "SELECT venda.* FROM VENDA WHERE COD_MOTO = ?1", nativeQuery = true)
 	public Optional<Venda> findByCodMoto(Integer codMoto);
 
 }

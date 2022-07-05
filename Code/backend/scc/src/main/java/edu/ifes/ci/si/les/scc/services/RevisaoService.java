@@ -12,6 +12,8 @@ import java.util.NoSuchElementException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import edu.ifes.ci.si.les.scc.model.ItemRevisao;
 import edu.ifes.ci.si.les.scc.model.Moto;
@@ -22,6 +24,7 @@ import edu.ifes.ci.si.les.scc.repositories.MotoRepository;
 import edu.ifes.ci.si.les.scc.repositories.ProdutoRepository;
 import edu.ifes.ci.si.les.scc.repositories.RevisaoRepository;
 import edu.ifes.ci.si.les.scc.repositories.VendaRepository;
+import edu.ifes.ci.si.les.scc.services.exceptions.BusinessRuleException;
 import edu.ifes.ci.si.les.scc.services.exceptions.DataIntegrityException;
 import edu.ifes.ci.si.les.scc.services.exceptions.ObjectNotFoundException;
 
@@ -50,7 +53,7 @@ public class RevisaoService {
         return repository.findAll();
     }
      
-    
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
     public Revisao insert(Revisao obj) {
         try {
         	Revisao result = verificarRegrasDeNegocio(obj);
@@ -58,8 +61,10 @@ public class RevisaoService {
         		result.setCodRevisao(null);
         		for (ItemRevisao item : result.getItens()) {
 					item.setRevisao(result);
-					//item.getProduto().setQtd(item.getProduto().getQtd()-item.getQtd()); // Alterando a disponibilidade de fita
-					//produtoRepository.save(item.getProduto());
+					Produto produtoBanco = produtoRepository.findById(item.getProduto().getId()).get();
+					// Alterando a qtd de produtos no estoque.
+					produtoBanco.setQtd(produtoBanco.getQtd().intValue() - item.getQtd().intValue()); 
+					produtoRepository.save(produtoBanco);
 				}
         		
         		return repository.save(result);
@@ -70,15 +75,37 @@ public class RevisaoService {
         return null;
     }
 
-    
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
     public Revisao update(Revisao obj) {
         try {
         	findById(obj.getCodRevisao());
-    		for (ItemRevisao item : obj.getItens()) {
-				item.setRevisao(obj);
-				//item.getProduto().setQtd(item.getProduto().getQtd()-item.getQtd()); // Alterando a disponibilidade de fita
-				//produtoRepository.save(item.getProduto());
+        	
+        	Integer dif = 0;
+        	for (ItemRevisao itemBanco : repository.findById(obj.getCodRevisao()).get().getItens()) {
+        		for (ItemRevisao item : obj.getItens()) {
+        			item.setRevisao(obj);
+        			String idItemBanco = itemBanco.getRevisao().getCodRevisao().toString().concat(itemBanco.getProduto().getId().toString());
+        			
+        			String idItem = item.getRevisao().getCodRevisao().toString().concat(item.getProduto().getId().toString());
+
+        			if(idItemBanco.equals(idItem)) {	
+        				dif = itemBanco.getQtd().intValue() - item.getQtd().intValue();
+        			}
+        			
+        			if(dif > 0) {
+        				Produto produtoBanco = produtoRepository.findById(item.getProduto().getId()).get();
+        				// Aumenta qtd de produtos no estoque.
+        				produtoBanco.setQtd(produtoBanco.getQtd().intValue() + dif); 
+        				produtoRepository.save(produtoBanco);
+        			} else {
+        				Produto produtoBanco = produtoRepository.findById(item.getProduto().getId()).get();
+        				// Diminui qtd de produtos no estoque.
+        				produtoBanco.setQtd(produtoBanco.getQtd().intValue() + dif); 
+        				produtoRepository.save(produtoBanco);
+        			}
+        		}
 			}
+        	
         	return repository.save(obj);
         } catch (DataIntegrityViolationException e) {
             throw new DataIntegrityException("Campo(s) obrigatório(s) da revisão não foi(foram) preenchido(s).");
@@ -103,6 +130,10 @@ public class RevisaoService {
    		
    		boolean motoQuitada = venda.getPago();
    		
+   		if(!motoQuitada) {
+   			throw new BusinessRuleException("Esta moto não está quitada!");
+   		}
+   		
    		//Rule 2 - Caso seja a primeira ou a segunda revisão da moto ela não será cobrada.
    		Integer qtdRevisao = repository.countByCodMoto(moto.getCodMoto()).get();
    		
@@ -117,11 +148,7 @@ public class RevisaoService {
    		Integer qtdTrocaOleo = repository.countTrocaOleo(moto.getCodMoto()).get();
    		
    		if(qtdTrocaOleo < 3 && !revisaoGratis) {
-   			Collection<Integer> idOleos = produtoRepository.getProdutosByNome();
-//   			for (Integer oleo : idOleos) {
-//   				System.out.println("\n\n\n *******" + oleo);
-//   			}
-//   			
+ 			
    			Double descontoOleo = 0.00;
 		
 			for (ItemRevisao item : obj.getItens()) {
