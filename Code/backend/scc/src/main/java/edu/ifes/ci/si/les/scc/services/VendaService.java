@@ -7,6 +7,7 @@
 package edu.ifes.ci.si.les.scc.services;
 
 import java.util.Collection;
+import java.sql.Date;
 import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -135,6 +136,10 @@ public class VendaService {
    			return false;
    		}  		
    	}
+   	
+   	public Collection<Venda> findByVendaFuncionarioAndPeriodo(Integer idFuncionario, Date inicio, Date termino) { 		
+		return repository.findByVendaFuncionarioAndPeriodo(idFuncionario, inicio, termino);
+	}
 
 }
 
