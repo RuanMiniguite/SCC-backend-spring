@@ -7,17 +7,13 @@
 package edu.ifes.ci.si.les.scc.services;
 
 import java.util.Collection;
-import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
-import edu.ifes.ci.si.les.scc.model.Moto;
 import edu.ifes.ci.si.les.scc.model.RealizaRecall;
-import edu.ifes.ci.si.les.scc.model.Venda;
 import edu.ifes.ci.si.les.scc.repositories.RealizaRecallRepository;
-import edu.ifes.ci.si.les.scc.repositories.RecallRepository;
 import edu.ifes.ci.si.les.scc.services.exceptions.BusinessRuleException;
 import edu.ifes.ci.si.les.scc.services.exceptions.DataIntegrityException;
 import edu.ifes.ci.si.les.scc.services.exceptions.ObjectNotFoundException;

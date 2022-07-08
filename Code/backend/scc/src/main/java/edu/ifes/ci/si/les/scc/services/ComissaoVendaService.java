@@ -9,7 +9,6 @@ import edu.ifes.ci.si.les.scc.model.TaxaComissao;
 import edu.ifes.ci.si.les.scc.model.Venda;
 import edu.ifes.ci.si.les.scc.repositories.ComissaoVendaRepository;
 import edu.ifes.ci.si.les.scc.repositories.FuncionarioRepository;
-import edu.ifes.ci.si.les.scc.repositories.TaxaComissaoRepository;
 import edu.ifes.ci.si.les.scc.repositories.VendaRepository;
 import edu.ifes.ci.si.les.scc.services.exceptions.BusinessRuleException;
 import edu.ifes.ci.si.les.scc.services.exceptions.DataIntegrityException;
@@ -35,9 +34,6 @@ public class ComissaoVendaService {
 
     @Autowired
     private FuncionarioRepository funcionarioRepository;
-
-    @Autowired
-    private TaxaComissaoRepository taxaComissaoRepository;
 
     @Autowired
     private TaxaComissaoService taxaComissaoService;
