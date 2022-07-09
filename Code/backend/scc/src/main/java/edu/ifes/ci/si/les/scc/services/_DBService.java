@@ -114,6 +114,8 @@ public class _DBService {
         
         Venda venda1 = new Venda(null, sdf.parse("2022-03-07"), 16000.00, true, 150.00, cliente1, funcionario2, moto1);
         Venda venda2 = new Venda(null, sdf.parse("2022-03-13"), 22000.00, false, 100.00, cliente2, funcionario3, moto2);
+        Venda venda3 = new Venda(null, sdf.parse("2022-03-14"), 22000.00, true, 100.00, cliente1, funcionario2, moto4);
+        Venda venda4 = new Venda(null, sdf.parse("2022-03-15"), 22000.00, false, 100.00, cliente3, funcionario3, moto5);
 
         
         ComissaoVenda comissaoVenda1 = new ComissaoVenda(null, sdf.parse("01-03-2022"), sdf.parse("30-03-2022"), 16000.00, false, taxaComissao1, venda1);
@@ -146,7 +148,7 @@ public class _DBService {
         funcionarioRepository.saveAll(Arrays.asList(funcionario1, funcionario2, funcionario3));
         clienteRepository.saveAll(Arrays.asList(cliente1, cliente2, cliente3));
         motoRepository.saveAll(Arrays.asList(moto1, moto2, moto3, moto4, moto5, moto6));
-        vendaRepository.saveAll(Arrays.asList(venda1, venda2));
+        vendaRepository.saveAll(Arrays.asList(venda1, venda2, venda3, venda4));
         comissaoVendaRepository.saveAll(Arrays.asList(comissaoVenda1, comissaoVenda2));
         recallRepository.saveAll(Arrays.asList(recall1, recall2));
         realizaRecallRepository.saveAll(Arrays.asList(realizaRecall, realizaRecal2, realizaRecal3, realizaRecal4, realizaRecal5));
