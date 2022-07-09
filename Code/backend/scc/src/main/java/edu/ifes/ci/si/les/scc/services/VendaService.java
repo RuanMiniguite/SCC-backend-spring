@@ -36,7 +36,8 @@ public class VendaService {
     private ClienteRepository clienteRepository;
     @Autowired
     private FuncionarioRepository funcionarioRepository;
-    
+
+
 
     public Venda findById(Integer id) {
     	try {
@@ -93,7 +94,7 @@ public class VendaService {
    			clienteDevedor = true;
    		}
    		
-   		
+
    		//Rule 2 - Motorcycle In Stock
    		Moto moto = motoRepository.findById(obj.getMoto().getCodMoto()).get();
    		boolean motosEmEstoque = false;	
@@ -101,10 +102,12 @@ public class VendaService {
    		if(moto.getCliente() != null) {
    			throw new BusinessRuleException("A Moto Já possui Cliente!");
    		}else {
+   			moto.setCliente(obj.getCliente());
+   			motoRepository.save(moto);
    			motosEmEstoque = true;
    		}	
 
-   		
+
    		//Rule 3 - Customer is an employee 10%
    		Cliente cliente = clienteRepository.findById(obj.getCliente().getCodCliente()).get();
    		Funcionario funcionario = funcionarioRepository.findById(obj.getFuncionario().getCodFuncionario()).get();
