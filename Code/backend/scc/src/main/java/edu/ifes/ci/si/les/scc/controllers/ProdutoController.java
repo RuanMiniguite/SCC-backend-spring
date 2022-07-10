@@ -1,5 +1,6 @@
 package edu.ifes.ci.si.les.scc.controllers;
 
+import java.sql.Date;
 import java.util.Collection;
 
 import javax.validation.Valid;
@@ -57,5 +58,11 @@ public class ProdutoController {
     public ResponseEntity<Void> delete(@PathVariable Integer id) {
         service.delete(id);
         return ResponseEntity.noContent().build();
+    }
+    
+    @RequestMapping(value = "/findByProdutosPorPeriodo/{inicio}/{termino}", method = RequestMethod.GET)
+    public ResponseEntity<Collection<?>> findByProdutosPorPeriodo(@PathVariable Date inicio, @PathVariable Date termino) {
+        Collection<?> collection = service.findByProdutosPorPeriodo(inicio, termino);
+        return ResponseEntity.ok().body(collection);
     }
 }

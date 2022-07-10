@@ -92,7 +92,9 @@ public class _DBService {
         Produto produto1 = new Produto(null, "Bateria", "Moura", 307.02, 1);
         Produto produto2 = new Produto(null, "Bateria", "Bosch", 149.00, 5);
         Produto produto3 = new Produto(null, "Óleo Lubrificante", "Yamalube", 30.00, 10);
-        
+        Produto produto4 = new Produto(null, "Amortecedor", "Moroe", 150.3, 1);
+        Produto produto5 = new Produto(null, "Amortecedor", "Cofap", 185.00, 3);
+        Produto produto6 = new Produto(null, "Pastilha de Freio", "Cobreq", 50.00, 7);
         
         Cliente cliente1 = new Cliente(null, "Ruan Miniguite", "111.111.111-11", "Ruanminiguite@gmail.com", "(28)99918-3529", "Espirito Santo", "29295-000", "Vargem alta", "Pombal de Cima", 0);
         Cliente cliente2 = new Cliente(null, "Pedro Miniguite", "222.222.222-22", "Pedrominiguite@gmail.com", "(28)99912-1292", "Espirito Santo", "29295-000", "Vargem alta", "São josé de fruteiras", 1);
@@ -134,17 +136,28 @@ public class _DBService {
 
         Revisao revisao1 = new Revisao(null, sdf.parse("2022-05-01"), 795.25, funcionario1, moto1);
         Revisao revisao2 = new Revisao(null, sdf.parse("2022-05-03"), 356.00, funcionario1, moto2);
-        
+        Revisao revisao3 = new Revisao(null, sdf.parse("2022-05-01"), 659.25, funcionario1, moto1);
+        Revisao revisao4 = new Revisao(null, sdf.parse("2022-05-06"), 789.00, funcionario1, moto2);
+        Revisao revisao5 = new Revisao(null, sdf.parse("2022-05-07"), 123.25, funcionario1, moto1);
+        Revisao revisao6 = new Revisao(null, sdf.parse("2022-05-09"), 759.00, funcionario1, moto2);
         
         ItemRevisao ItemRevisao1 = new ItemRevisao(revisao1, produto1, 307.02, 1);
         ItemRevisao ItemRevisao2 = new ItemRevisao(revisao2, produto3, 30.00, 1);
+        ItemRevisao ItemRevisao3 = new ItemRevisao(revisao3, produto2, 149.00, 1);
+        ItemRevisao ItemRevisao4 = new ItemRevisao(revisao4, produto2, 149.00, 1);
+        ItemRevisao ItemRevisao5 = new ItemRevisao(revisao5, produto4, 150.30, 1);
+        ItemRevisao ItemRevisao6 = new ItemRevisao(revisao6, produto4, 150.30, 1);
         
         revisao1.setItens(Arrays.asList(ItemRevisao1));
         revisao2.setItens(Arrays.asList(ItemRevisao2));
+        revisao3.setItens(Arrays.asList(ItemRevisao3));
+        revisao4.setItens(Arrays.asList(ItemRevisao4));
+        revisao5.setItens(Arrays.asList(ItemRevisao5));
+        revisao6.setItens(Arrays.asList(ItemRevisao6));
         
         tipoMotoRepository.saveAll(Arrays.asList(tipoMoto1, tipoMoto2, tipoMoto3, tipoMoto4, tipoMoto5));
         taxaComissaoRepository.saveAll(Arrays.asList(taxaComissao1, taxaComissao2));
-        produtoRepository.saveAll(Arrays.asList(produto1, produto2, produto3));
+        produtoRepository.saveAll(Arrays.asList(produto1, produto2, produto3, produto4, produto5, produto6));
         funcionarioRepository.saveAll(Arrays.asList(funcionario1, funcionario2, funcionario3));
         clienteRepository.saveAll(Arrays.asList(cliente1, cliente2, cliente3));
         motoRepository.saveAll(Arrays.asList(moto1, moto2, moto3, moto4, moto5, moto6));
@@ -152,6 +165,6 @@ public class _DBService {
         comissaoVendaRepository.saveAll(Arrays.asList(comissaoVenda1, comissaoVenda2));
         recallRepository.saveAll(Arrays.asList(recall1, recall2));
         realizaRecallRepository.saveAll(Arrays.asList(realizaRecall, realizaRecal2, realizaRecal3, realizaRecal4, realizaRecal5));
-        revisaoRepository.saveAll(Arrays.asList(revisao1, revisao2));
+        revisaoRepository.saveAll(Arrays.asList(revisao1, revisao2, revisao3, revisao4, revisao5, revisao6));
 	}
 }

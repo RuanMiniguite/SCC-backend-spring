@@ -1,5 +1,6 @@
 package edu.ifes.ci.si.les.scc.services;
 
+import java.sql.Date;
 import java.util.Collection;
 import java.util.NoSuchElementException;
 
@@ -57,4 +58,7 @@ public class ProdutoService {
         }
     }
     
+   	public Collection<?> findByProdutosPorPeriodo(Date inicio, Date termino) { 		
+		return repository.findByProdutosPorPeriodo(inicio, termino);
+	}
 }
