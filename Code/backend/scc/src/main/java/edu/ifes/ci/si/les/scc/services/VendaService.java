@@ -140,8 +140,8 @@ public class VendaService {
    		}  		
    	}
    	
-   	public Collection<Venda> findByVendaFuncionarioAndPeriodo(Integer idFuncionario, Date inicio, Date termino) { 		
-		return repository.findByVendaFuncionarioAndPeriodo(idFuncionario, inicio, termino);
+   	public Collection<?> findByVendaFuncionarioAndPeriodo(Date inicio, Date termino) { 		
+		return repository.findByVendaFuncionarioAndPeriodo(inicio, termino);
 	}
 
 }

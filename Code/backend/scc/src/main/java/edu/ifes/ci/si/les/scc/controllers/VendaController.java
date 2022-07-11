@@ -65,9 +65,9 @@ public class VendaController {
         return ResponseEntity.noContent().build();
     }
     
-    @RequestMapping(value = "/findByVendaFuncionarioAndPeriodo/{idFuncionario}/{inicio}/{termino}", method = RequestMethod.GET)
-    public ResponseEntity<Collection<Venda>> findByVendaFuncionarioAndPeriodo(@PathVariable Integer idFuncionario, @PathVariable Date inicio, @PathVariable Date termino) {
-        Collection<Venda> collection = service.findByVendaFuncionarioAndPeriodo(idFuncionario, inicio, termino);
+    @RequestMapping(value = "/findByVendaFuncionarioAndPeriodo/{inicio}/{termino}", method = RequestMethod.GET)
+    public ResponseEntity<Collection<?>> findByVendaFuncionarioAndPeriodo(@PathVariable Date inicio, @PathVariable Date termino) {
+        Collection<?> collection = service.findByVendaFuncionarioAndPeriodo(inicio, termino);
         return ResponseEntity.ok().body(collection);
     }
 }
