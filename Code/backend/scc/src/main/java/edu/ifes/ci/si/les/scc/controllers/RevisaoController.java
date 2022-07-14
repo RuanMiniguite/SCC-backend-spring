@@ -6,6 +6,7 @@
 
 package edu.ifes.ci.si.les.scc.controllers;
 
+import java.sql.Date;
 import java.util.Collection;
 
 import javax.validation.Valid;
@@ -63,5 +64,11 @@ public class RevisaoController {
 		service.delete(id);
 		return ResponseEntity.noContent().build();
 	}
+	
+	@RequestMapping(value = "/findByRevisaoClienteAndPeriodo/{inicio}/{termino}", method = RequestMethod.GET)
+    public ResponseEntity<Collection<?>> findByRevisaoClienteAndPeriodo(@PathVariable Date inicio, @PathVariable Date termino) {
+        Collection<?> collection = service.findByRevisaoClienteAndPeriodo(inicio, termino);
+        return ResponseEntity.ok().body(collection);
+    }
 
 }
