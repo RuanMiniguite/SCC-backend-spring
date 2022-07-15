@@ -1,4 +1,4 @@
-package edu.ifes.ci.si.les.scc.services;
+	package edu.ifes.ci.si.les.scc.services;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -120,8 +120,9 @@ public class _DBService {
         Venda venda4 = new Venda(null, sdf.parse("2022-03-15"), 22000.00, false, 100.00, cliente3, funcionario3, moto5);
 
         
-        ComissaoVenda comissaoVenda1 = new ComissaoVenda(null, sdf.parse("01-03-2022"), sdf.parse("30-03-2022"), 16000.00, false, taxaComissao1, venda1);
+        ComissaoVenda comissaoVenda1 = new ComissaoVenda(null, sdf.parse("01-03-2022"), sdf.parse("30-03-2022"), 16000.00, true, taxaComissao1, venda1);
         ComissaoVenda comissaoVenda2 = new ComissaoVenda(null, sdf.parse("01-03-2022"), sdf.parse("30-03-2022"), 22000.00, false, taxaComissao1, venda2);
+        ComissaoVenda comissaoVenda3 = new ComissaoVenda(null, sdf.parse("01-03-2022"), sdf.parse("30-03-2022"), 22000.00, true, taxaComissao1, venda3);
         
         
         Recall recall1 = new Recall(null, "Recall Corrente de Comando", sdf.parse("2022-05-05"),"TL0001", "TL0100", 2016, sdf.parse("2022-05-20"), sdf.parse("2022-06-20"), funcionario1);
@@ -162,7 +163,7 @@ public class _DBService {
         clienteRepository.saveAll(Arrays.asList(cliente1, cliente2, cliente3));
         motoRepository.saveAll(Arrays.asList(moto1, moto2, moto3, moto4, moto5, moto6));
         vendaRepository.saveAll(Arrays.asList(venda1, venda2, venda3, venda4));
-        comissaoVendaRepository.saveAll(Arrays.asList(comissaoVenda1, comissaoVenda2));
+        comissaoVendaRepository.saveAll(Arrays.asList(comissaoVenda1, comissaoVenda2, comissaoVenda3));
         recallRepository.saveAll(Arrays.asList(recall1, recall2));
         realizaRecallRepository.saveAll(Arrays.asList(realizaRecall, realizaRecal2, realizaRecal3, realizaRecal4, realizaRecal5));
         revisaoRepository.saveAll(Arrays.asList(revisao1, revisao2, revisao3, revisao4, revisao5, revisao6));
