@@ -1,0 +1,2995 @@
+{
+	"info": {
+		"_postman_id": "8f4f93c9-00a9-4b52-9ddb-9d26fa88a569",
+		"name": "SCC - APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16709562"
+	},
+	"item": [
+		{
+			"name": "CRUDs",
+			"item": [
+				{
+					"name": "Funcionário - Ruan Pezzin Miniguite",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdFuncionarios_Error Copy",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/funcionarios/7",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"funcionarios",
+												"7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "findIdFuncionarios_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/funcionarios/7",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"funcionarios",
+												"7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertFuncionarios_Error",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nome\": \"\",\r\n    \"cpf\": \"555.555.555-55\",\r\n    \"telefone\": \"(55)55555-5555\",\r\n    \"dataNascimento\": \"2000-06-16\",\r\n    \"estado\": \"Espirito Santo\",\r\n    \"cep\": \"29295-000\",\r\n    \"cidade\": \"Vargem alta\",\r\n    \"bairro\": \"Pombal de cima\",\r\n    \"login\": \"Ruan\",\r\n    \"senha\": \"123456\",\r\n    \"cargo\": \"Vendedor\",\r\n    \"salario\": 3000.66,\r\n    \"admin\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/funcionarios/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"funcionarios",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertFuncionarios_Error",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nome\": \"Ruan Miniguite\",\r\n    \"cpf\": \"555.555.555-55\",\r\n    \"telefone\": \"55555-5555\",\r\n    \"dataNascimento\": \"2000-06-16\",\r\n    \"estado\": \"Espirito Santo\",\r\n    \"cep\": \"29295-000\",\r\n    \"cidade\": \"Vargem alta\",\r\n    \"bairro\": \"Pombal de cima\",\r\n    \"login\": \"Ruan\",\r\n    \"senha\": \"123456\",\r\n    \"cargo\": \"Vendedor\",\r\n    \"salario\": 3000.66,\r\n    \"admin\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/funcionarios/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"funcionarios",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateFuncionarios_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codFuncionario\": 4,\r\n    \"nome\": \"Ruan Miniguite2\",\r\n    \"cpf\": \"555.555.555-55\",\r\n    \"telefone\": \"(55)55555-5555\",\r\n    \"dataNascimento\": \"2000-06-16\",\r\n    \"estado\": \"Espirito Santo\",\r\n    \"cep\": \"29295-000\",\r\n    \"cidade\": \"Vargem alta\",\r\n    \"bairro\": \"\",\r\n    \"login\": \"Ruan\",\r\n    \"senha\": \"123456\",\r\n    \"cargo\": \"Vendedor\",\r\n    \"salario\": 3000.66,\r\n    \"admin\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/funcionarios/4",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"funcionarios",
+												"4"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteFuncionarios_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/funcionarios/6",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"funcionarios",
+												"6"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findFuncionarios",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/funcionarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"funcionarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdFuncionarios",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/funcionarios/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"funcionarios",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertFuncionarios",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Ruan Miniguite\",\r\n    \"cpf\": \"555.555.555-55\",\r\n    \"telefone\": \"(55)55555-5555\",\r\n    \"dataNascimento\": \"2000-06-16\",\r\n    \"estado\": \"Espirito Santo\",\r\n    \"cep\": \"29295-000\",\r\n    \"cidade\": \"Vargem alta\",\r\n    \"bairro\": \"Pombal de cima\",\r\n    \"login\": \"Ruan\",\r\n    \"senha\": \"123456\",\r\n    \"cargo\": \"Vendedor\",\r\n    \"salario\": 3000.66,\r\n    \"admin\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/funcionarios/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"funcionarios",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateFuncionarios",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codFuncionario\": 4,\r\n    \"nome\": \"Ruan Miniguite2\",\r\n    \"cpf\": \"555.555.555-55\",\r\n    \"telefone\": \"(55)55555-5555\",\r\n    \"dataNascimento\": \"2000-06-16\",\r\n    \"estado\": \"Espirito Santo\",\r\n    \"cep\": \"29295-000\",\r\n    \"cidade\": \"Vargem alta\",\r\n    \"bairro\": \"Pombal de cima\",\r\n    \"login\": \"Ruan\",\r\n    \"senha\": \"123456\",\r\n    \"cargo\": \"Vendedor\",\r\n    \"salario\": 3000.66,\r\n    \"admin\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/funcionarios/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"funcionarios",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteFuncionarios",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/funcionarios/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"funcionarios",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cliente - Patrícia Regina Darós",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdClientes_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/clientes/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"clientes",
+												"20"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertClientes_Error",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "    {\r\n        \"nome\": \"Mariana Ribeiro\",\r\n        \"cpf\": \"144.050.987-262\",\r\n        \"email\": \"MarianaRibeiro@gmail.com\",\r\n        \"telefone\": \"(27)99856-9865\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29258-000\",\r\n        \"cidade\": \"Marechal Floriano\",\r\n        \"bairro\": \"Araguaia\",\r\n        \"pessoa\": 1\r\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/clientes/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"clientes",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateClientes_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "    {\r\n        \"codCliente\": 3,\r\n        \"nome\": \"Mariana Ribeiro Carmo\",\r\n        \"cpf\": \"144.050.963-26\",\r\n        \"email\": \"MarianaRibeiro@gmail.com\",\r\n        \"telefone\": \"(27)99856-9865\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29258-0000\",\r\n        \"cidade\": \"Marechal Floriano\",\r\n        \"bairro\": \"Araguaia\",\r\n        \"pessoa\": 1\r\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/clientes/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"clientes",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteClientes_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/clientes/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"clientes",
+												"20"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findCliente",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdClientes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertClientes",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"nome\": \"Mariana Ribeiro\",\r\n        \"cpf\": \"144.050.987-26\",\r\n        \"email\": \"MarianaRibeiro@gmail.com\",\r\n        \"telefone\": \"(27)99856-9865\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29258-000\",\r\n        \"cidade\": \"Marechal Floriano\",\r\n        \"bairro\": \"Araguaia\",\r\n        \"pessoa\": 1\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateClientes",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"codCliente\": 3,\r\n        \"nome\": \"Mariana Ribeiro Carmo\",\r\n        \"cpf\": \"144.050.963-26\",\r\n        \"email\": \"MarianaRibeiro@gmail.com\",\r\n        \"telefone\": \"(27)99856-9865\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29258-000\",\r\n        \"cidade\": \"Marechal Floriano\",\r\n        \"bairro\": \"Araguaia\",\r\n        \"pessoa\": 1\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteClientes",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Comissao - Natalia Pitanga",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdTaxaComissao_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/taxacomissao/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"taxacomissao",
+												"20"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertTaxaComissao_Error",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"taxa\": \"\",\r\n    \"valorLimite\": 30000.0,\r\n    \"anoCasa\": 2,\r\n    \"cargo\": \"Vendedor\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/taxacomissao/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"taxacomissao",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateTaxaComissao_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codTaxaComissao\": 3,\r\n    \"taxa\": \"\",\r\n    \"valorLimite\": 100000.0,\r\n    \"anoCasa\": 2,\r\n    \"cargo\": \"Gerente\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/taxacomissao/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"taxacomissao",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteTaxaComissao_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/taxacomissao/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"taxacomissao",
+												"20"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findTaxaComissao",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/taxacomissao",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"taxacomissao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdTaxaComissao",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/taxacomissao/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"taxacomissao",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertTaxaComissao",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"taxa\": 3.0,\r\n    \"valorLimite\": 30000.0,\r\n    \"anoCasa\": 2,\r\n    \"cargo\": \"Vendedor\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/taxacomissao",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"taxacomissao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateTaxaComissao",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"codTaxaComissao\": 3,\r\n    \"taxa\": 2.0,\r\n    \"valorLimite\": 100000.0,\r\n    \"anoCasa\": 2,\r\n    \"cargo\": \"Gerente\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/taxacomissao/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"taxacomissao",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteTaxaComissao",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/taxacomissao/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"taxacomissao",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Produto - Luiz Henrique Cabral",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdProdutos_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/produtos/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"produtos",
+												"20"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertProdutos_Error",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nome\": \"\",\r\n    \"marca\": \"Levorin\",\r\n    \"valor\": 350.52,\r\n    \"qtd\": 2\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/produtos/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"produtos",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateProdutos_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 4,\r\n    \"nome\": \"Pneu - 100/80 - 14\",\r\n    \"marca\": \"\",\r\n    \"valor\": 450.52,\r\n    \"qtd\": 3\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/produtos/4",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"produtos",
+												"4"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteProdutos_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/produtos/15",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"produtos",
+												"15"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findProdutos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/produtos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"produtos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdProdutos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/produtos/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"produtos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertProdutos",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Pneu - 100/80 - 14\",\r\n    \"marca\": \"Levorin\",\r\n    \"valor\": 350.52,\r\n    \"qtd\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/produtos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"produtos",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateProdutos",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 4,\r\n    \"nome\": \"Pneu - 100/80 - 14\",\r\n    \"marca\": \"Levorin\",\r\n    \"valor\": 450.52,\r\n    \"qtd\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/produtos/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"produtos",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProdutos",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/produtos/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"produtos",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "TipoMoto - Ruan Pezzin Miniguite",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdTipoMoto_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/tipomotos/7",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"tipomotos",
+												"7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertTipoMoto_Error",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nome\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/tipomotos/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"tipomotos",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateTipoMoto_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nome\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/tipomotos/4",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"tipomotos",
+												"4"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteTipoMoto_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/tipomotos/9",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"tipomotos",
+												"9"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findTipoMoto",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/tipomotos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipomotos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdTipoMoto",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/tipomotos/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipomotos",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertTipoMoto",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"New\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/tipomotos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipomotos",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateTipoMoto",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codTipo\": 6,\r\n    \"nome\": \"new 2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/tipomotos/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipomotos",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteTipoMoto",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/tipomotos/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipomotos",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Recall - Patrícia Regina Darós",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdRecall_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/recall/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"recall",
+												"20"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertRecall_Error",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"codRecall\": 3,\r\n        \"nome\": \"Recall Corrente 3\",\r\n        \"dataCadastro\": \"2022-05-05\",\r\n        \"chassiIni\": \"TL0001\",\r\n        \"chassiFim\": \"TL0100\",\r\n        \"anoModelo\": 201600,\r\n        \"dataIni\": \"2022-06-01\",\r\n        \"dataFim\": \"2022-06-20\",\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 1,\r\n             \"nome\": \"Alberto Ricado\",\r\n             \"cpf\": \"017.268.037-98\",\r\n             \"telefone\": \"(27)99865-9856\",\r\n             \"dataNascimento\": \"2000-04-01\",\r\n             \"estado\": \"Espirito Santo\",\r\n             \"cep\": \"95689-000\",\r\n             \"cidade\": \"Pedra Azul\",\r\n             \"bairro\": \"Águas Vermelhas\",\r\n             \"login\": \"AlbertoR\",\r\n             \"senha\": \"123456\",\r\n             \"cargo\": \"Vendedor\",\r\n             \"salario\": 2500.66,\r\n             \"admin\": 1\r\n        }\r\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/recall/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"recall",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateRecall_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"codRecall\": 3,\r\n        \"nome\": \"Recall Corrente 3\",\r\n        \"dataCadastro\": \"2022-05-05\",\r\n        \"chassiIni\": \"TL0001\",\r\n        \"chassiFim\": \"TL0100\",\r\n        \"anoModelo\": 201600,\r\n        \"dataIni\": \"2022-06-01\",\r\n        \"dataFim\": \"2022-06-20\",\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 1,\r\n             \"nome\": \"Alberto Ricado\",\r\n             \"cpf\": \"017.268.037-98\",\r\n             \"telefone\": \"(27)99865-9856\",\r\n             \"dataNascimento\": \"2000-04-01\",\r\n             \"estado\": \"Espirito Santo\",\r\n             \"cep\": \"95689-000\",\r\n             \"cidade\": \"Pedra Azul\",\r\n             \"bairro\": \"Águas Vermelhas\",\r\n             \"login\": \"AlbertoR\",\r\n             \"senha\": \"123456\",\r\n             \"cargo\": \"Vendedor\",\r\n             \"salario\": 2500.66,\r\n             \"admin\": 1\r\n        }\r\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/recall/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"recall",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteRecall_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/recall/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"recall",
+												"20"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findRecall",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/recall",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recall"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdRecall",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/recall/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recall",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertRecall",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"codRecall\": 3,\r\n        \"nome\": \"Recall Corrente 3\",\r\n        \"dataCadastro\": \"2022-05-05\",\r\n        \"chassiIni\": \"TL0001\",\r\n        \"chassiFim\": \"TL0100\",\r\n        \"anoModelo\": 2016,\r\n        \"dataIni\": \"2022-05-20\",\r\n        \"dataFim\": \"2022-06-20\",\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 1,\r\n             \"nome\": \"Alberto Ricado\",\r\n             \"cpf\": \"017.268.037-98\",\r\n             \"telefone\": \"(27)99865-9856\",\r\n             \"dataNascimento\": \"2000-04-01\",\r\n             \"estado\": \"Espirito Santo\",\r\n             \"cep\": \"95689-000\",\r\n             \"cidade\": \"Pedra Azul\",\r\n             \"bairro\": \"Águas Vermelhas\",\r\n             \"login\": \"AlbertoR\",\r\n             \"senha\": \"123456\",\r\n             \"cargo\": \"Vendedor\",\r\n             \"salario\": 2500.66,\r\n             \"admin\": 1\r\n        }\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/recall/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recall",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateRecall",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codRecall\": 1,\r\n    \"nome\": \"Recall Corrente de Comando\",\r\n    \"dataCadastro\": \"2022-05-05\",\r\n    \"chassiIni\": \"TL0001\",\r\n    \"chassiFim\": \"TL0100\",\r\n    \"anoModelo\": 2016,\r\n    \"dataIni\": \"2022-05-20\",\r\n    \"dataFim\": \"2022-06-20\",\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 1,\r\n        \"nome\": \"Alberto Ricado\",\r\n        \"cpf\": \"017.268.037-98\",\r\n        \"telefone\": \"(27)99865-9856\",\r\n        \"dataNascimento\": \"2000-04-01\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"95689-000\",\r\n        \"cidade\": \"Pedra Azul\",\r\n        \"bairro\": \"Águas Vermelhas\",\r\n        \"login\": \"AlbertoR\",\r\n        \"senha\": \"123456\",\r\n        \"cargo\": \"Vendedor\",\r\n        \"salario\": 2500.66,\r\n        \"admin\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/recall//1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recall",
+										"",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteRecall",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/recall/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recall",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Moto - Luiz Henrique Cabral",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdMotos_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/motos/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"motos",
+												"20"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertMotos_Error",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"modelo\": \"Bross 160\",\r\n\t\"marca\": null,\r\n\t\"anoFabricacao\": 2019,\r\n\t\"anoModelo\": 2019,\r\n\t\"cor\": \"Branco\",\r\n\t\"combustivel\": \"Gasolina\",\r\n\t\"cc\": 159.01,\r\n\t\"chassi\": \"TL0002\",\r\n\t\"valor\": 19000.0,\r\n\t\"placa\": \"ABD1B33\",\r\n\t\"tipoMoto\": {\r\n\t\t\"codTipo\": 1,\r\n\t\t\"nome\": \"Street\"\r\n\t},\r\n\t\"cliente\": {\r\n\t\t\"codCliente\": 1,\r\n\t\t\"nome\": \"Ruan Miniguite\",\r\n\t\t\"cpf\": \"111.111.111-11\",\r\n\t\t\"email\": \"Ruanminiguite@gmail.com\",\r\n\t\t\"telefone\": \"(28)99918-3529\",\r\n\t\t\"estado\": \"Espirito Santo\",\r\n\t\t\"cep\": \"29295-000\",\r\n\t\t\"cidade\": \"Vargem alta\",\r\n\t\t\"bairro\": \"Pombal de Cima\",\r\n\t\t\"pessoa\": 0\r\n\t}\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/motos",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"motos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateMotos_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codMoto\": 1,\r\n    \"modelo\": \"Biz 110i+\",\r\n    \"marca\": \"Honda\",\r\n    \"anoFabricacao\": 2011,\r\n    \"anoModelo\": \"2011\",\r\n    \"cor\": \"Vermelha\",\r\n    \"combustivel\": \"Gasolina\",\r\n    \"cc\": 109.01,\r\n    \"chassi\": \"TL0001\",\r\n    \"valor\": -1,\r\n    \"placa\": \"ABC1B34\",\r\n    \"tipoMoto\": {\r\n        \"codTipo\": 1,\r\n        \"nome\": \"Street\"\r\n    },\r\n    \"cliente\": {\r\n        \"codCliente\": 1,\r\n        \"nome\": \"Ruan Miniguite\",\r\n        \"cpf\": \"111.111.111-11\",\r\n        \"email\": \"Ruanminiguite@gmail.com\",\r\n        \"telefone\": \"(28)99918-3529\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29295-0000\",\r\n        \"cidade\": \"Vargem alta\",\r\n        \"bairro\": \"Pombal de Cima\",\r\n        \"pessoa\": 0\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/motos/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"motos",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteMotos_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/motos/2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"motos",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findMotos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/motos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"motos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdMotos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/motos/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"motos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertMotos",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"modelo\": \"Bross 160\",\r\n\t\"marca\": \"Honda\",\r\n\t\"anoFabricacao\": 2019,\r\n\t\"anoModelo\": 2019,\r\n\t\"cor\": \"Branco\",\r\n\t\"combustivel\": \"Gasolina\",\r\n\t\"cc\": 159.01,\r\n\t\"chassi\": \"TL0002\",\r\n\t\"valor\": 19000.0,\r\n\t\"placa\": \"ABD1B33\",\r\n\t\"tipoMoto\": {\r\n\t\t\"codTipo\": 1,\r\n\t\t\"nome\": \"Street\"\r\n\t},\r\n\t\"cliente\": {\r\n\t\t\"codCliente\": 1,\r\n\t\t\"nome\": \"Ruan Miniguite\",\r\n\t\t\"cpf\": \"111.111.111-11\",\r\n\t\t\"email\": \"Ruanminiguite@gmail.com\",\r\n\t\t\"telefone\": \"(28)99918-3529\",\r\n\t\t\"estado\": \"Espirito Santo\",\r\n\t\t\"cep\": \"29295-000\",\r\n\t\t\"cidade\": \"Vargem alta\",\r\n\t\t\"bairro\": \"Pombal de Cima\",\r\n\t\t\"pessoa\": 0\r\n\t}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/motos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"motos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateMotos",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codMoto\": 1,\r\n    \"modelo\": \"Biz 110i+\",\r\n    \"marca\": \"Honda\",\r\n    \"anoFabricacao\": 2011,\r\n    \"anoModelo\": 2011,\r\n    \"cor\": \"Vermelha\",\r\n    \"combustivel\": \"Gasolina\",\r\n    \"cc\": 109.01,\r\n    \"chassi\": \"TL0001\",\r\n    \"valor\": 16000.0,\r\n    \"placa\": \"ABC1B34\",\r\n    \"tipoMoto\": {\r\n        \"codTipo\": 1,\r\n        \"nome\": \"Street\"\r\n    },\r\n    \"cliente\": {\r\n        \"codCliente\": 1,\r\n        \"nome\": \"Ruan Miniguite\",\r\n        \"cpf\": \"111.111.111-11\",\r\n        \"email\": \"Ruanminiguite@gmail.com\",\r\n        \"telefone\": \"(28)99918-3529\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29295-000\",\r\n        \"cidade\": \"Vargem alta\",\r\n        \"bairro\": \"Pombal de Cima\",\r\n        \"pessoa\": 0\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/motos/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"motos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteMotos",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/motos/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"motos",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Relatórios",
+			"item": [
+				{
+					"name": "Relatorio - Ruan Pezzin Miniguite",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vendas/findByVendaFuncionarioAndPeriodo/2022-03-07/2022-03-15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendas",
+								"findByVendaFuncionarioAndPeriodo",
+								"2022-03-07",
+								"2022-03-15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Relatorio - Natalia Pitanga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/comissaovendas/findByFuncionarioAndPeriodo/2/0006-09-12/0035-09-12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comissaovendas",
+								"findByFuncionarioAndPeriodo",
+								"2",
+								"0006-09-12",
+								"0035-09-12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Relatorio - Patricia Regina Daros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/produtos/findByProdutosPorPeriodo/2022-05-01/2022-05-15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produtos",
+								"findByProdutosPorPeriodo",
+								"2022-05-01",
+								"2022-05-15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Relatorio - Luiz Henrique Cabral",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/revisoes/findByRevisaoClienteAndPeriodo/2022-05-01/2022-05-06",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"revisoes",
+								"findByRevisaoClienteAndPeriodo",
+								"2022-05-01",
+								"2022-05-06"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Processos",
+			"item": [
+				{
+					"name": "Venda - Ruan Pezzin Miniguite",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdVendas_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/vendas/6",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"vendas",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertVendas_Error_Regra_1",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": \"2022-06-10\",\r\n    \"valor\": 20000.0,\r\n    \"pago\": false,\r\n    \"desconto\": 1000.0,\r\n    \"cliente\": {\r\n        \"codCliente\": 2\r\n    },\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 2\r\n    },\r\n    \"moto\": {\r\n        \"codMoto\": 3,\r\n        \"tipoMoto\": {\r\n            \"codTipo\": 1\r\n        },\r\n        \"cliente\": {\r\n            \"codCliente\": 2\r\n        }\r\n    }\r\n}\r\n// Cliente em debito",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/vendas",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"vendas"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertVendas_Error_Regra_2",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": \"2022-06-10\",\r\n    \"valor\": 20000.0,\r\n    \"pago\": false,\r\n    \"desconto\": 1000.0,\r\n    \"cliente\": {\r\n        \"codCliente\": 1\r\n    },\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 2\r\n    },\r\n    \"moto\": {\r\n        \"codMoto\": 1,\r\n        \"tipoMoto\": {\r\n            \"codTipo\": 1\r\n        },\r\n        \"cliente\": {\r\n            \"codCliente\": 1\r\n        }\r\n    }\r\n}\r\n// Moto já possui dono (Moto Sem Estoque)",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/vendas",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"vendas"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertVendas_Error_Regra_3",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": \"2022-06-10\",\r\n    \"valor\": 20000.0,\r\n    \"pago\": false,\r\n    \"desconto\": 500.0,\r\n    \"cliente\": {\r\n        \"codCliente\": 1\r\n    },\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 2\r\n    },\r\n    \"moto\": {\r\n        \"codMoto\": 3,\r\n        \"tipoMoto\": {\r\n            \"codTipo\": 1\r\n        },\r\n        \"cliente\": {\r\n            \"codCliente\": 1\r\n        }\r\n    }\r\n}\r\n// Desconto para o cliente está errado!",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/vendas",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"vendas"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertVendas_Error_Regra_4",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": \"2022-06-10\",\r\n    \"valor\": 20000.0,\r\n    \"pago\": false,\r\n    \"desconto\": 1000.0,\r\n    \"cliente\": {\r\n        \"codCliente\": 3\r\n    },\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 1\r\n    },\r\n    \"moto\": {\r\n        \"codMoto\": 3,\r\n        \"tipoMoto\": {\r\n            \"codTipo\": 1\r\n        },\r\n        \"cliente\": {\r\n            \"codCliente\": 3\r\n        }\r\n    }\r\n}\r\n// Desconto para o funcionario está errado!",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/vendas",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"vendas"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateVendas_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codVenda\": 3,\r\n    \"data\": \"2022-06-10\",\r\n    \"valor\": 25000.0,\r\n    \"pago\": true,\r\n    \"desconto\": 150.0,\r\n    \"cliente\": {\r\n        \"codCliente\": 1,\r\n        \"nome\": \"Ruan Miniguite\",\r\n        \"cpf\": \"111.111.111-11\",\r\n        \"email\": \"Ruanminiguite@gmail.com\",\r\n        \"telefone\": \"(28)99918-3529\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29295-000\",\r\n        \"cidade\": \"Vargem alta\",\r\n        \"bairro\": \"Pombal de Cima\",\r\n        \"pessoa\": 0\r\n    },\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 2,\r\n        \"nome\": \"Marcos Bravim\",\r\n        \"cpf\": \"968.569.787-45\",\r\n        \"telefone\": \"(27)99999-9786\",\r\n        \"dataNascimento\": \"1998-10-12\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29500-000\",\r\n        \"cidade\": \"Cachoeiro de Itapemirim\",\r\n        \"bairro\": \"Agostinho Simonato\",\r\n        \"login\": \"MarcosB\",\r\n        \"senha\": \"789123\",\r\n        \"cargo\": \"Vendedor\",\r\n        \"salario\": 1856.44,\r\n        \"admin\": 0\r\n    },\r\n    \"moto\": {\r\n        \"codMoto\": 1,\r\n        \"modelo\": \"Biz 110i\",\r\n        \"marca\": \"Honda\",\r\n        \"anoFabricacao\": 2011,\r\n        \"anoModelo\": 2011,\r\n        \"cor\": \"Vermelha\",\r\n        \"combustivel\": \"Gasolina\",\r\n        \"cc\": 109.01,\r\n        \"chassi\": \"TL0001\",\r\n        \"valor\": 16000.0,\r\n        \"placa\": \"ABC1B34\",\r\n        \"tipoMoto\": {\r\n            \"codTipo\": 1,\r\n            \"nome\": \"Street\"\r\n        },\r\n        \"cliente\": {\r\n            \"codCliente\": 1,\r\n            \"nome\": \"Ruan Miniguite\",\r\n            \"cpf\": \"111.111.111-11\",\r\n            \"email\": \"Ruanminiguite@gmail.com\",\r\n            \"telefone\": \"(28)99918-3529\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29295-000\",\r\n            \"cidade\": \"Vargem alta\",\r\n            \"bairro\": \"Pombal de Cima\",\r\n            \"pessoa\": 0\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/vendas/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"vendas",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteVendas_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/vendas/90",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"vendas",
+												"90"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findVendas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/vendas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"vendas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdVendas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/vendas/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"vendas",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertVendas",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": \"2022-06-10\",\r\n    \"valor\": 20000.0,\r\n    \"pago\": false,\r\n    \"desconto\": 1000.0,\r\n    \"cliente\": {\r\n        \"codCliente\": 1\r\n    },\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 2\r\n    },\r\n    \"moto\": {\r\n        \"codMoto\": 3,\r\n        \"tipoMoto\": {\r\n            \"codTipo\": 1\r\n        },\r\n        \"cliente\": {\r\n            \"codCliente\": 1\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/vendas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"vendas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateVendas",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codVenda\": 3,\r\n    \"data\": \"2022-06-10\",\r\n    \"valor\": 25000.0,\r\n    \"pago\": true,\r\n    \"desconto\": 150.0,\r\n    \"cliente\": {\r\n        \"codCliente\": 1,\r\n        \"nome\": \"Ruan Miniguite\",\r\n        \"cpf\": \"111.111.111-11\",\r\n        \"email\": \"Ruanminiguite@gmail.com\",\r\n        \"telefone\": \"(28)99918-3529\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29295-000\",\r\n        \"cidade\": \"Vargem alta\",\r\n        \"bairro\": \"Pombal de Cima\",\r\n        \"pessoa\": 0\r\n    },\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 2,\r\n        \"nome\": \"Marcos Bravim\",\r\n        \"cpf\": \"968.569.787-45\",\r\n        \"telefone\": \"(27)99999-9786\",\r\n        \"dataNascimento\": \"1998-10-12\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"29500-000\",\r\n        \"cidade\": \"Cachoeiro de Itapemirim\",\r\n        \"bairro\": \"Agostinho Simonato\",\r\n        \"login\": \"MarcosB\",\r\n        \"senha\": \"789123\",\r\n        \"cargo\": \"Vendedor\",\r\n        \"salario\": 1856.44,\r\n        \"admin\": 0\r\n    },\r\n    \"moto\": {\r\n        \"codMoto\": 1,\r\n        \"modelo\": \"Biz 110i\",\r\n        \"marca\": \"Honda\",\r\n        \"anoFabricacao\": 2011,\r\n        \"anoModelo\": 2011,\r\n        \"cor\": \"Vermelha\",\r\n        \"combustivel\": \"Gasolina\",\r\n        \"cc\": 109.01,\r\n        \"chassi\": \"TL0001\",\r\n        \"valor\": 16000.0,\r\n        \"placa\": \"ABC1B34\",\r\n        \"tipoMoto\": {\r\n            \"codTipo\": 1,\r\n            \"nome\": \"Street\"\r\n        },\r\n        \"cliente\": {\r\n            \"codCliente\": 1,\r\n            \"nome\": \"Ruan Miniguite\",\r\n            \"cpf\": \"111.111.111-11\",\r\n            \"email\": \"Ruanminiguite@gmail.com\",\r\n            \"telefone\": \"(28)99918-3529\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29295-000\",\r\n            \"cidade\": \"Vargem alta\",\r\n            \"bairro\": \"Pombal de Cima\",\r\n            \"pessoa\": 0\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/vendas/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"vendas",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteVendas",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/vendas/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"vendas",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Realizar Recall - Patrícia Regina Darós",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdRealizaRecall_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/realizarRecall/9",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"realizarRecall",
+												"9"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertRealizaRecall_Error_Regra_1",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": \"2022-05-20\",\r\n    \"status\": 0,\r\n    \"moto\": {\r\n        \"codMoto\": 1},\r\n    \"recall\": {\r\n        \"codRecall\": 1}\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/realizarRecall",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"realizarRecall"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertRealizaRecall_Error_Regra_2",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": \"2022-05-21\",\r\n    \"status\": 0,\r\n    \"moto\": {\r\n        \"codMoto\": 6},\r\n    \"recall\": {\r\n        \"codRecall\": 1}\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/realizarRecall",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"realizarRecall"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateRealizaRecall_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codRealizarRecall\": 5,\r\n    \"data\": \"2022-05-21\",\r\n    \"status\": 0,\r\n    \"moto\": {\r\n        \"codMoto\": 15},\r\n    \"recall\": {\r\n        \"codRecall\": 1}\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/realizarRecall/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"realizarRecall",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteRealizaRecall_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/realizarRecall/17",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"realizarRecall",
+												"17"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findRealizaRecall",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/realizarRecall",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"realizarRecall"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdRealizaRecall",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/realizarRecall/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"realizarRecall",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertRealizaRecall",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": \"2022-05-22\",\r\n    \"status\": 0,\r\n    \"moto\": {\r\n        \"codMoto\": 6},\r\n    \"recall\": {\r\n        \"codRecall\": 2}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/realizarRecall",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"realizarRecall"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateRealizaRecall",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codRealizarRecall\": 3,\r\n    \"data\": \"2022-05-26\",\r\n    \"status\": 1,\r\n    \"moto\": {\r\n        \"codMoto\": 1},\r\n    \"recall\": {\r\n        \"codRecall\": 2}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/realizarRecall/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"realizarRecall",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteRealizaRecall",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/realizarRecall/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"realizarRecall",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ComissaoVenda - Natalia Pitanga",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdComissaoVenda_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/comissaovendas/4",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"comissaovendas",
+												"4"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertComissaoVenda_Error_Regra_1",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codComissaoVenda\": 1,\r\n    \"dataIni\": \"2022-04-01\",\r\n    \"dataFim\": \"2022-05-01\",\r\n    \"valorTotal\": 16000.0,\r\n    \"pago\": false,\r\n    \"taxaComissao\": {\r\n        \"codTaxaComissao\": 1,\r\n        \"taxa\": 5.0,\r\n        \"valorLimite\": 40000.0,\r\n        \"anoCasa\": 1,\r\n        \"cargo\": \"Vendedor\"\r\n    },\r\n    \"venda\": {\r\n        \"codVenda\": 3,\r\n        \"data\": \"2022-03-07\",\r\n        \"valor\": 16000.0,\r\n        \"pago\": true,\r\n        \"desconto\": 150.0,\r\n        \"cliente\": {\r\n            \"codCliente\": 1,\r\n            \"nome\": \"Ruan Miniguite\",\r\n            \"cpf\": \"111.111.111-11\",\r\n            \"email\": \"Ruanminiguite@gmail.com\",\r\n            \"telefone\": \"(28)99918-3529\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29295-000\",\r\n            \"cidade\": \"Vargem alta\",\r\n            \"bairro\": \"Pombal de Cima\",\r\n            \"pessoa\": 0\r\n        },\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 4,\r\n            \"nome\": \"Marcos Bravim\",\r\n            \"cpf\": \"968.569.787-45\",\r\n            \"telefone\": \"(27)99999-9786\",\r\n            \"dataNascimento\": \"1998-10-12\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29500-000\",\r\n            \"cidade\": \"Cachoeiro de Itapemirim\",\r\n            \"bairro\": \"Agostinho Simonato\",\r\n            \"login\": \"MarcosB\",\r\n            \"senha\": \"789123\",\r\n            \"cargo\": \"Vendedor\",\r\n            \"salario\": 1856.44,\r\n            \"admin\": 0,\r\n            \"dataAdmissao\": \"2018-01-01\"\r\n        },\r\n        \"moto\": {\r\n            \"codMoto\": 1,\r\n            \"modelo\": \"Biz 110i\",\r\n            \"marca\": \"Honda\",\r\n            \"anoFabricacao\": 2011,\r\n            \"anoModelo\": 2011,\r\n            \"cor\": \"Vermelha\",\r\n            \"combustivel\": \"Gasolina\",\r\n            \"cc\": 109.01,\r\n            \"chassi\": \"TL0001\",\r\n            \"valor\": 16000.0,\r\n            \"placa\": \"ABC1B34\",\r\n            \"tipoMoto\": {\r\n                \"codTipo\": 1,\r\n                \"nome\": \"Street\"\r\n            },\r\n            \"cliente\": {\r\n                \"codCliente\": 1,\r\n                \"nome\": \"Ruan Miniguite\",\r\n                \"cpf\": \"111.111.111-11\",\r\n                \"email\": \"Ruanminiguite@gmail.com\",\r\n                \"telefone\": \"(28)99918-3529\",\r\n                \"estado\": \"Espirito Santo\",\r\n                \"cep\": \"29295-000\",\r\n                \"cidade\": \"Vargem alta\",\r\n                \"bairro\": \"Pombal de Cima\",\r\n                \"pessoa\": 0\r\n            }\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/comissaovendas",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"comissaovendas"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertComissaoVenda_Error_Regra_2",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codComissaoVenda\": 1,\r\n    \"dataIni\": \"2022-04-01\",\r\n    \"dataFim\": \"2022-05-01\",\r\n    \"valorTotal\": 16000.0,\r\n    \"pago\": false,\r\n    \"taxaComissao\": {\r\n        \"codTaxaComissao\": 1,\r\n        \"taxa\": 5.0,\r\n        \"valorLimite\": 40000.0,\r\n        \"anoCasa\": 1,\r\n        \"cargo\": \"Vendedor\"\r\n    },\r\n    \"venda\": {\r\n        \"codVenda\": 3,\r\n        \"data\": \"2022-03-07\",\r\n        \"valor\": 16000.0,\r\n        \"pago\": true,\r\n        \"desconto\": 150.0,\r\n        \"cliente\": {\r\n            \"codCliente\": 1,\r\n            \"nome\": \"Ruan Miniguite\",\r\n            \"cpf\": \"111.111.111-11\",\r\n            \"email\": \"Ruanminiguite@gmail.com\",\r\n            \"telefone\": \"(28)99918-3529\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29295-000\",\r\n            \"cidade\": \"Vargem alta\",\r\n            \"bairro\": \"Pombal de Cima\",\r\n            \"pessoa\": 0\r\n        },\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 2,\r\n            \"nome\": \"Marcos Bravim\",\r\n            \"cpf\": \"968.569.787-45\",\r\n            \"telefone\": \"(27)99999-9786\",\r\n            \"dataNascimento\": \"1998-10-12\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29500-000\",\r\n            \"cidade\": \"Cachoeiro de Itapemirim\",\r\n            \"bairro\": \"Agostinho Simonato\",\r\n            \"login\": \"MarcosB\",\r\n            \"senha\": \"789123\",\r\n            \"cargo\": \"Vendedor\",\r\n            \"salario\": 1856.44,\r\n            \"admin\": 0,\r\n            \"dataAdmissao\": \"2018-01-01\"\r\n        },\r\n        \"moto\": {\r\n            \"codMoto\": 1,\r\n            \"modelo\": \"Biz 110i\",\r\n            \"marca\": \"Honda\",\r\n            \"anoFabricacao\": 2011,\r\n            \"anoModelo\": 2011,\r\n            \"cor\": \"Vermelha\",\r\n            \"combustivel\": \"Gasolina\",\r\n            \"cc\": 109.01,\r\n            \"chassi\": \"TL0001\",\r\n            \"valor\": 16000.0,\r\n            \"placa\": \"ABC1B34\",\r\n            \"tipoMoto\": {\r\n                \"codTipo\": 1,\r\n                \"nome\": \"Street\"\r\n            },\r\n            \"cliente\": {\r\n                \"codCliente\": 1,\r\n                \"nome\": \"Ruan Miniguite\",\r\n                \"cpf\": \"111.111.111-11\",\r\n                \"email\": \"Ruanminiguite@gmail.com\",\r\n                \"telefone\": \"(28)99918-3529\",\r\n                \"estado\": \"Espirito Santo\",\r\n                \"cep\": \"29295-000\",\r\n                \"cidade\": \"Vargem alta\",\r\n                \"bairro\": \"Pombal de Cima\",\r\n                \"pessoa\": 0\r\n            }\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/comissaovendas",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"comissaovendas"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertComissaoVenda_Error_Regra_3",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codComissaoVenda\": 1,\r\n    \"dataIni\": \"2022-04-01\",\r\n    \"dataFim\": \"2022-05-01\",\r\n    \"valorTotal\": 16000.0,\r\n    \"pago\": false,\r\n    \"taxaComissao\": {\r\n        \"codTaxaComissao\": 1,\r\n        \"taxa\": 5.0,\r\n        \"valorLimite\": 40000.0,\r\n        \"anoCasa\": 1,\r\n        \"cargo\": \"Vendedor\"\r\n    },\r\n    \"venda\": {\r\n        \"codVenda\": 2,\r\n        \"data\": \"2022-03-07\",\r\n        \"valor\": 16000.0,\r\n        \"pago\": true,\r\n        \"desconto\": 150.0,\r\n        \"cliente\": {\r\n            \"codCliente\": 1,\r\n            \"nome\": \"Ruan Miniguite\",\r\n            \"cpf\": \"111.111.111-11\",\r\n            \"email\": \"Ruanminiguite@gmail.com\",\r\n            \"telefone\": \"(28)99918-3529\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29295-000\",\r\n            \"cidade\": \"Vargem alta\",\r\n            \"bairro\": \"Pombal de Cima\",\r\n            \"pessoa\": 0\r\n        },\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 2,\r\n            \"nome\": \"Marcos Bravim\",\r\n            \"cpf\": \"968.569.787-45\",\r\n            \"telefone\": \"(27)99999-9786\",\r\n            \"dataNascimento\": \"1998-10-12\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29500-000\",\r\n            \"cidade\": \"Cachoeiro de Itapemirim\",\r\n            \"bairro\": \"Agostinho Simonato\",\r\n            \"login\": \"MarcosB\",\r\n            \"senha\": \"789123\",\r\n            \"cargo\": \"Vendedor\",\r\n            \"salario\": 1856.44,\r\n            \"admin\": 0,\r\n            \"dataAdmissao\": \"2018-01-01\"\r\n        },\r\n        \"moto\": {\r\n            \"codMoto\": 1,\r\n            \"modelo\": \"Biz 110i\",\r\n            \"marca\": \"Honda\",\r\n            \"anoFabricacao\": 2011,\r\n            \"anoModelo\": 2011,\r\n            \"cor\": \"Vermelha\",\r\n            \"combustivel\": \"Gasolina\",\r\n            \"cc\": 109.01,\r\n            \"chassi\": \"TL0001\",\r\n            \"valor\": 16000.0,\r\n            \"placa\": \"ABC1B34\",\r\n            \"tipoMoto\": {\r\n                \"codTipo\": 1,\r\n                \"nome\": \"Street\"\r\n            },\r\n            \"cliente\": {\r\n                \"codCliente\": 1,\r\n                \"nome\": \"Ruan Miniguite\",\r\n                \"cpf\": \"111.111.111-11\",\r\n                \"email\": \"Ruanminiguite@gmail.com\",\r\n                \"telefone\": \"(28)99918-3529\",\r\n                \"estado\": \"Espirito Santo\",\r\n                \"cep\": \"29295-000\",\r\n                \"cidade\": \"Vargem alta\",\r\n                \"bairro\": \"Pombal de Cima\",\r\n                \"pessoa\": 0\r\n            }\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/comissaovendas",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"comissaovendas"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateComissaoVenda_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codRealizarRecall\": 5,\r\n    \"data\": \"2022-05-21\",\r\n    \"status\": 0,\r\n    \"moto\": {\r\n        \"codMoto\": 15},\r\n    \"recall\": {\r\n        \"codRecall\": 1}\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/comissaovendas/4",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"comissaovendas",
+												"4"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteComissaoVenda_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/comissaovendas/4",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"comissaovendas",
+												"4"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findComissaoVenda",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/comissaovendas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comissaovendas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdComissaoVenda",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/comissaovendas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comissaovendas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertComissaoVenda",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codComissaoVenda\": 1,\r\n    \"dataIni\": \"2022-04-01\",\r\n    \"dataFim\": \"2022-05-01\",\r\n    \"valorTotal\": 16000.0,\r\n    \"pago\": false,\r\n    \"taxaComissao\": {\r\n        \"codTaxaComissao\": 1,\r\n        \"taxa\": 5.0,\r\n        \"valorLimite\": 40000.0,\r\n        \"anoCasa\": 1,\r\n        \"cargo\": \"Vendedor\"\r\n    },\r\n    \"venda\": {\r\n        \"codVenda\": 3,\r\n        \"data\": \"2022-03-07\",\r\n        \"valor\": 16000.0,\r\n        \"pago\": true,\r\n        \"desconto\": 150.0,\r\n        \"cliente\": {\r\n            \"codCliente\": 1,\r\n            \"nome\": \"Ruan Miniguite\",\r\n            \"cpf\": \"111.111.111-11\",\r\n            \"email\": \"Ruanminiguite@gmail.com\",\r\n            \"telefone\": \"(28)99918-3529\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29295-000\",\r\n            \"cidade\": \"Vargem alta\",\r\n            \"bairro\": \"Pombal de Cima\",\r\n            \"pessoa\": 0\r\n        },\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 2,\r\n            \"nome\": \"Marcos Bravim\",\r\n            \"cpf\": \"968.569.787-45\",\r\n            \"telefone\": \"(27)99999-9786\",\r\n            \"dataNascimento\": \"1998-10-12\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29500-000\",\r\n            \"cidade\": \"Cachoeiro de Itapemirim\",\r\n            \"bairro\": \"Agostinho Simonato\",\r\n            \"login\": \"MarcosB\",\r\n            \"senha\": \"789123\",\r\n            \"cargo\": \"Vendedor\",\r\n            \"salario\": 1856.44,\r\n            \"admin\": 0,\r\n            \"dataAdmissao\": \"2018-01-01\"\r\n        },\r\n        \"moto\": {\r\n            \"codMoto\": 1,\r\n            \"modelo\": \"Biz 110i\",\r\n            \"marca\": \"Honda\",\r\n            \"anoFabricacao\": 2011,\r\n            \"anoModelo\": 2011,\r\n            \"cor\": \"Vermelha\",\r\n            \"combustivel\": \"Gasolina\",\r\n            \"cc\": 109.01,\r\n            \"chassi\": \"TL0001\",\r\n            \"valor\": 16000.0,\r\n            \"placa\": \"ABC1B34\",\r\n            \"tipoMoto\": {\r\n                \"codTipo\": 1,\r\n                \"nome\": \"Street\"\r\n            },\r\n            \"cliente\": {\r\n                \"codCliente\": 1,\r\n                \"nome\": \"Ruan Miniguite\",\r\n                \"cpf\": \"111.111.111-11\",\r\n                \"email\": \"Ruanminiguite@gmail.com\",\r\n                \"telefone\": \"(28)99918-3529\",\r\n                \"estado\": \"Espirito Santo\",\r\n                \"cep\": \"29295-000\",\r\n                \"cidade\": \"Vargem alta\",\r\n                \"bairro\": \"Pombal de Cima\",\r\n                \"pessoa\": 0\r\n            }\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/comissaovendas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comissaovendas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateComissaoVenda",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codComissaoVenda\": 4,\r\n    \"dataIni\": \"2022-04-01\",\r\n    \"dataFim\": \"2022-05-01\",\r\n    \"valorTotal\": 16000.0,\r\n    \"pago\": false,\r\n    \"taxaComissao\": {\r\n        \"codTaxaComissao\": 1,\r\n        \"taxa\": 5.0,\r\n        \"valorLimite\": 40000.0,\r\n        \"anoCasa\": 1,\r\n        \"cargo\": \"Vendedor\"\r\n    },\r\n    \"venda\": {\r\n        \"codVenda\": 3,\r\n        \"data\": \"2022-03-07\",\r\n        \"valor\": 16000.0,\r\n        \"pago\": true,\r\n        \"desconto\": 150.0,\r\n        \"cliente\": {\r\n            \"codCliente\": 1,\r\n            \"nome\": \"Ruan Miniguite\",\r\n            \"cpf\": \"111.111.111-11\",\r\n            \"email\": \"Ruanminiguite@gmail.com\",\r\n            \"telefone\": \"(28)99918-3529\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29295-000\",\r\n            \"cidade\": \"Vargem alta\",\r\n            \"bairro\": \"Pombal de Cima\",\r\n            \"pessoa\": 0\r\n        },\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 2,\r\n            \"nome\": \"Marcos Bravim\",\r\n            \"cpf\": \"968.569.787-45\",\r\n            \"telefone\": \"(27)99999-9786\",\r\n            \"dataNascimento\": \"1998-10-12\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29500-000\",\r\n            \"cidade\": \"Cachoeiro de Itapemirim\",\r\n            \"bairro\": \"Agostinho Simonato\",\r\n            \"login\": \"MarcosB\",\r\n            \"senha\": \"789123\",\r\n            \"cargo\": \"Vendedor\",\r\n            \"salario\": 1856.44,\r\n            \"admin\": 0,\r\n            \"dataAdmissao\": \"2018-01-01\"\r\n        },\r\n        \"moto\": {\r\n            \"codMoto\": 1,\r\n            \"modelo\": \"Biz 110i\",\r\n            \"marca\": \"Honda\",\r\n            \"anoFabricacao\": 2011,\r\n            \"anoModelo\": 2011,\r\n            \"cor\": \"Vermelha\",\r\n            \"combustivel\": \"Gasolina\",\r\n            \"cc\": 109.01,\r\n            \"chassi\": \"TL0001\",\r\n            \"valor\": 16000.0,\r\n            \"placa\": \"ABC1B34\",\r\n            \"tipoMoto\": {\r\n                \"codTipo\": 1,\r\n                \"nome\": \"Street\"\r\n            },\r\n            \"cliente\": {\r\n                \"codCliente\": 1,\r\n                \"nome\": \"Ruan Miniguite\",\r\n                \"cpf\": \"111.111.111-11\",\r\n                \"email\": \"Ruanminiguite@gmail.com\",\r\n                \"telefone\": \"(28)99918-3529\",\r\n                \"estado\": \"Espirito Santo\",\r\n                \"cep\": \"29295-000\",\r\n                \"cidade\": \"Vargem alta\",\r\n                \"bairro\": \"Pombal de Cima\",\r\n                \"pessoa\": 0\r\n            }\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/comissaovendas/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comissaovendas",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteComissaoVenda",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/comissaovendas/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comissaovendas",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Revisao - Luiz Henrique Zanella",
+					"item": [
+						{
+							"name": "Erros",
+							"item": [
+								{
+									"name": "findIdRevisoes_Error",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/revisoes/9",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"revisoes",
+												"9"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertRevisoes_Error_Regra_1",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"data\": \"2022-05-01\",\r\n        \"valor\": 179.00,\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 1\r\n        },\r\n        \"moto\": {\r\n            \"codMoto\": 2\r\n        },\r\n        \"itens\": [\r\n            {\r\n                \"valorUnitario\": 30.00,\r\n                \"qtd\": 1,\r\n                \"produto\": {\r\n                    \"id\": 3,\r\n                    \"nome\": \"Óleo Lubrificante\",\r\n                    \"marca\": \"Yamalube\",\r\n                    \"valor\": 30.0\r\n                }\r\n            },\r\n            {\r\n                \"valorUnitario\": 149.00,\r\n                \"qtd\": 1,\r\n                \"produto\": {\r\n                    \"id\": 2,\r\n                    \"nome\": \"Bateria\",\r\n                    \"marca\": \"Bosch\",\r\n                    \"valor\": 149.0\r\n                }\r\n            }\r\n        ]\r\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/revisoes",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"revisoes"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateRevisoes_Error",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codRevisao\": 1,\r\n    \"valor\": 307.02,\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 1,\r\n        \"nome\": \"Alberto Ricado\",\r\n        \"cpf\": \"017.268.037-98\",\r\n        \"telefone\": \"(27)99865-9856\",\r\n        \"dataNascimento\": \"2000-04-01\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"95689-000\",\r\n        \"cidade\": \"Pedra Azul\",\r\n        \"bairro\": \"Águas Vermelhas\",\r\n        \"login\": \"AlbertoR\",\r\n        \"senha\": \"123456\",\r\n        \"cargo\": \"Vendedor\",\r\n        \"salario\": 2500.66,\r\n        \"admin\": 1\r\n    },\r\n    \"moto\": {\r\n        \"codMoto\": 1,\r\n        \"modelo\": \"Biz 110i\",\r\n        \"marca\": \"Honda\",\r\n        \"anoFabricacao\": 2011,\r\n        \"anoModelo\": 2011,\r\n        \"cor\": \"Vermelha\",\r\n        \"combustivel\": \"Gasolina\",\r\n        \"cc\": 109.01,\r\n        \"chassi\": \"TL0001\",\r\n        \"valor\": 16000.0,\r\n        \"placa\": \"ABC1B34\",\r\n        \"tipoMoto\": {\r\n            \"codTipo\": 1,\r\n            \"nome\": \"Street\"\r\n        },\r\n        \"cliente\": {\r\n            \"codCliente\": 1,\r\n            \"nome\": \"Ruan Miniguite\",\r\n            \"cpf\": \"111.111.111-11\",\r\n            \"email\": \"Ruanminiguite@gmail.com\",\r\n            \"telefone\": \"(28)99918-3529\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29295-000\",\r\n            \"cidade\": \"Vargem alta\",\r\n            \"bairro\": \"Pombal de Cima\",\r\n            \"pessoa\": 0\r\n        }\r\n    },\r\n    \"itens\": [\r\n        {\r\n            \"valorUnitario\": 307.02,\r\n            \"qtd\": 1,\r\n            \"produto\": {\r\n                \"id\": 1,\r\n                \"nome\": \"Bateria\",\r\n                \"marca\": \"Moura\",\r\n                \"valor\": 307.02,\r\n                \"qtd\": 1\r\n            }\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/revisoes/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"revisoes",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteRevisoes_Error",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/revisoes/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"revisoes",
+												"20"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "findRevisoes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/revisoes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"revisoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findIdRevisoes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/revisoes/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"revisoes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertRevisoes_Regra_2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"data\": \"2022-07-04\",\r\n        \"valor\": 149.00,\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 1\r\n        },\r\n        \"moto\": {\r\n            \"codMoto\": 1\r\n        },\r\n        \"itens\": [\r\n            {\r\n                \"valorUnitario\": 149.00,\r\n                \"qtd\": 1,\r\n                \"produto\": {\r\n                    \"id\": 2,\r\n                    \"nome\": \"Bateria\",\r\n                    \"marca\": \"Bosch\",\r\n                    \"valor\": 149.0\r\n                }\r\n            }\r\n        ]\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/revisoes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"revisoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertRevisoes_Regra_3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"data\": \"2022-05-01\",\r\n        \"valor\": 179.00,\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 1\r\n        },\r\n        \"moto\": {\r\n            \"codMoto\": 1\r\n        },\r\n        \"itens\": [\r\n            {\r\n                \"valorUnitario\": 30.00,\r\n                \"qtd\": 1,\r\n                \"produto\": {\r\n                    \"id\": 3,\r\n                    \"nome\": \"Óleo Lubrificante\",\r\n                    \"marca\": \"Yamalube\",\r\n                    \"valor\": 30.0\r\n                }\r\n            },\r\n            {\r\n                \"valorUnitario\": 149.00,\r\n                \"qtd\": 1,\r\n                \"produto\": {\r\n                    \"id\": 2,\r\n                    \"nome\": \"Bateria\",\r\n                    \"marca\": \"Bosch\",\r\n                    \"valor\": 149.0\r\n                }\r\n            }\r\n        ]\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/revisoes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"revisoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insertRevisoes",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"data\": \"2022-05-01\",\r\n        \"valor\": 179.00,\r\n        \"funcionario\": {\r\n            \"codFuncionario\": 1\r\n        },\r\n        \"moto\": {\r\n            \"codMoto\": 1\r\n        },\r\n        \"itens\": [\r\n            {\r\n                \"valorUnitario\": 149.0,\r\n                \"qtd\": 1,\r\n                \"produto\": {\r\n                    \"id\": 2,\r\n                    \"nome\": \"Bateria\",\r\n                    \"marca\": \"Bosch\",\r\n                    \"valor\": 149.0\r\n                }\r\n            }\r\n        ]\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/revisoes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"revisoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateRevisoes",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codRevisao\": 1,\r\n    \"data\": \"2022-05-01\",\r\n    \"valor\": 307.02,\r\n    \"funcionario\": {\r\n        \"codFuncionario\": 1,\r\n        \"nome\": \"Alberto Ricado\",\r\n        \"cpf\": \"017.268.037-98\",\r\n        \"telefone\": \"(27)99865-9856\",\r\n        \"dataNascimento\": \"2000-04-01\",\r\n        \"estado\": \"Espirito Santo\",\r\n        \"cep\": \"95689-000\",\r\n        \"cidade\": \"Pedra Azul\",\r\n        \"bairro\": \"Águas Vermelhas\",\r\n        \"login\": \"AlbertoR\",\r\n        \"senha\": \"123456\",\r\n        \"cargo\": \"Vendedor\",\r\n        \"salario\": 2500.66,\r\n        \"admin\": 1\r\n    },\r\n    \"moto\": {\r\n        \"codMoto\": 1,\r\n        \"modelo\": \"Biz 110i\",\r\n        \"marca\": \"Honda\",\r\n        \"anoFabricacao\": 2011,\r\n        \"anoModelo\": 2011,\r\n        \"cor\": \"Vermelha\",\r\n        \"combustivel\": \"Gasolina\",\r\n        \"cc\": 109.01,\r\n        \"chassi\": \"TL0001\",\r\n        \"valor\": 16000.0,\r\n        \"placa\": \"ABC1B34\",\r\n        \"tipoMoto\": {\r\n            \"codTipo\": 1,\r\n            \"nome\": \"Street\"\r\n        },\r\n        \"cliente\": {\r\n            \"codCliente\": 1,\r\n            \"nome\": \"Ruan Miniguite\",\r\n            \"cpf\": \"111.111.111-11\",\r\n            \"email\": \"Ruanminiguite@gmail.com\",\r\n            \"telefone\": \"(28)99918-3529\",\r\n            \"estado\": \"Espirito Santo\",\r\n            \"cep\": \"29295-000\",\r\n            \"cidade\": \"Vargem alta\",\r\n            \"bairro\": \"Pombal de Cima\",\r\n            \"pessoa\": 0\r\n        }\r\n    },\r\n    \"itens\": [\r\n        {\r\n            \"valorUnitario\": 307.02,\r\n            \"qtd\": 0,\r\n            \"produto\": {\r\n                \"id\": 1,\r\n                \"nome\": \"Bateria\",\r\n                \"marca\": \"Moura\",\r\n                \"valor\": 307.02\r\n            }\r\n        },\r\n        {\r\n            \"valorUnitario\": 30.0,\r\n            \"qtd\": 3,\r\n            \"produto\": {\r\n                \"id\": 3,\r\n                \"nome\": \"Óleo Lubrificante\",\r\n                \"marca\": \"Yamalube\",\r\n                \"valor\": 30.0\r\n            }\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/revisoes/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"revisoes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteRevisoes",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/revisoes/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"revisoes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
