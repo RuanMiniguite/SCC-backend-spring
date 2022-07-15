@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
+import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -151,61 +152,8 @@ public class ComissaoVendaService {
         }
     }
 
-    /*public boolean verificarRegrasDeNegocio(ComissaoVenda comissaoVenda) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        try {
-            Funcionario funcionario = funcionarioRepository.findById(comissaoVenda.getVenda().getFuncionario().getCodFuncionario()).get();
-            ComissaoVenda cV = null;
-            boolean funcionarioExists = funcionario.getCodFuncionario() > 0;
-            boolean vendaRecebida = false, taxaComissaoExists = false;
-
-            if (funcionarioExists) {
-                LocalDate d1 = comissaoVenda.getDataIni().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-                int ano = d1.getYear();
-                int mes = d1.getMonthValue();
-                int dia = d1.getDayOfMonth();
-                String dataInicio = ano + "-" + mes + "-" + dia;
-
-                LocalDate d2 = comissaoVenda.getDataIni().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-                ano = d2.getYear();
-                mes = d2.getMonthValue();
-                dia = d2.getDayOfMonth();
-                String dataFim = ano + "-" + mes + "-" + dia;
-
-                Venda venda = vendaRepository.findById(comissaoVenda.getVenda().getCodVenda()).get();
-                vendaRecebida = venda.getPago();
-
-                if (vendaRecebida) {
-                    TaxaComissao taxaComissao = taxaComissaoService.findByFuncionario(funcionario.getCodFuncionario()).get();
-                    taxaComissaoExists = taxaComissao.getCodTaxaComissao() > 0;
-
-                    if(taxaComissaoExists) {
-                        cV = new ComissaoVenda();
-                        cV.setTaxaComissao(taxaComissao);
-                        cV.setValorTotal((venda.getValor() - venda.getDesconto()) * (taxaComissao.getTaxa() / 100));
-                        cV.setDataIni(sdf.parse(dataInicio));
-                        cV.setDataFim(sdf.parse(dataFim));
-                        cV.setVenda(venda);
-                        cV.setPago(false);
-
-                        repository.save(cV);
-                    } else {
-                        throw new BusinessRuleException("Nenhuma TaxaComissão foi encontrada!");
-                    }
-                } else {
-                    throw new BusinessRuleException("Nenhuma comissão para receber!");
-                }
-            } else {
-                throw new BusinessRuleException("Funcionário não encontrado!");
-            }
-
-            if(funcionarioExists && vendaRecebida && taxaComissaoExists && ) {
-
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            return false;
-        }
-    }*/
+    public Collection<?> findByFuncionarioAndPeriodo(Integer cod_funcionario, Date inicio, Date termino) {
+        return repository.findByFuncionarioAndPeriodo(cod_funcionario, inicio, termino);
+    }
 
 }

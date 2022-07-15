@@ -12,6 +12,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.sql.Date;
 import java.util.Collection;
 
 @RestController
@@ -53,6 +54,12 @@ public class ComissaoVendaController {
     public ResponseEntity<Void> delete(@PathVariable Integer id) {
         service.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @RequestMapping(value = "/findByFuncionarioAndPeriodo/{cod_funcionario}/{inicio}/{termino}", method = RequestMethod.GET)
+    public ResponseEntity<Collection<?>> findByFuncionarioAndPeriodo(@PathVariable Integer cod_funcionario, @PathVariable Date inicio, @PathVariable Date termino) {
+        Collection<?> collection = service.findByFuncionarioAndPeriodo(cod_funcionario, inicio, termino);
+        return ResponseEntity.ok().body(collection);
     }
 
 }
