@@ -96,7 +96,7 @@ public class _DBService {
         Produto produto5 = new Produto(null, "Amortecedor", "Cofap", 185.00, 3);
         Produto produto6 = new Produto(null, "Pastilha de Freio", "Cobreq", 50.00, 7);
         
-        Cliente cliente1 = new Cliente(null, "Ruan Miniguite", "111.111.111-11", "Ruanminiguite@gmail.com", "(28)99918-3529", "Espirito Santo", "29295-000", "Vargem alta", "Pombal de Cima", 0);
+        Cliente cliente1 = new Cliente(null, "Ruan Miniguite", "111.111.111-11", "Ruanminiguite@gmail.com", "(28)99918-9999", "Espirito Santo", "29295-000", "Vargem alta", "Pombal de Cima", 0);
         Cliente cliente2 = new Cliente(null, "Pedro Miniguite", "222.222.222-22", "Pedrominiguite@gmail.com", "(28)99912-1292", "Espirito Santo", "29295-000", "Vargem alta", "São josé de fruteiras", 1);
         Cliente cliente3 = new Cliente(null, "Alberto Ricado", "017.268.037-98", "AlbertoRicado@gmail.com", "(27)99865-9856", "Espirito Santo", "95689-000", "Pedra Azul", "Águas Vermelhas", 0);
         

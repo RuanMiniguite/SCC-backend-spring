@@ -15,6 +15,7 @@ import javax.validation.Valid;
 import java.sql.Date;
 import java.util.Collection;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/comissaovendas")
 public class ComissaoVendaController {

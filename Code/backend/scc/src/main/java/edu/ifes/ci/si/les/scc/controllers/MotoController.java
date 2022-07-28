@@ -13,6 +13,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,7 @@ import edu.ifes.ci.si.les.scc.model.Moto;
 import edu.ifes.ci.si.les.scc.services.MotoService;
 import edu.ifes.ci.si.les.scc.services.exceptions.ConstraintException;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/motos")
 public class MotoController {
