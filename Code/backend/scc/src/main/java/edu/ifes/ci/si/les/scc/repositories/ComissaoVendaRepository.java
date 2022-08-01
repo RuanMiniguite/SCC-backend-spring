@@ -33,5 +33,5 @@ public interface ComissaoVendaRepository extends JpaRepository<ComissaoVenda, In
             "    AND cv.data_ini BETWEEN ?2 AND ?3\n" +
             "    AND cv.data_fim BETWEEN ?2 AND ?3\n" +
             "    GROUP BY cv.cod_comissao_venda", nativeQuery = true)
-    public Collection<?> findByFuncionarioAndPeriodo(Integer cod_funcionario, Date inicio, Date termino);
+    public Collection<ComissaoVenda> findByFuncionarioAndPeriodo(Integer cod_funcionario, Date inicio, Date termino);
 }

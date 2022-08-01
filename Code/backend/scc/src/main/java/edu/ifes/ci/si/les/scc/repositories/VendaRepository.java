@@ -36,4 +36,8 @@ public interface VendaRepository extends JpaRepository<Venda, Integer>{
 	@Query(value = "SELECT SUM(venda.valor) AS total, func.cod_funcionario, func.nome FROM venda INNER JOIN funcionario func on (func.cod_funcionario = venda.cod_funcionario) WHERE venda.data BETWEEN ?1 AND ?2 GROUP BY func.cod_funcionario, func.nome", nativeQuery = true)
 	public Collection<?> findByVendaFuncionarioAndPeriodo(Date inicio, Date termino);
 
+	@Transactional(readOnly = true)
+	@Query(value = "SELECT v.*, m.modelo, m.marca FROM venda v INNER JOIN funcionario f ON f.cod_funcionario = v.cod_funcionario INNER JOIN moto m ON m.cod_moto = v.cod_moto WHERE f.cod_funcionario = ?1", nativeQuery = true)
+	public Collection<Venda> findByFuncionario(Integer funcionarioId);
+
 }

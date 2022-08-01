@@ -7,6 +7,7 @@
 package edu.ifes.ci.si.les.scc.controllers;
 
 import java.util.Collection;
+import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -64,6 +65,13 @@ public class TaxaComissaoController {
     public ResponseEntity<Void> delete(@PathVariable Integer id) {
         service.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @RequestMapping(value = "/findByFuncionario/{funcionarioId}", method = RequestMethod.GET)
+    public ResponseEntity<TaxaComissao> findByFuncionario(@PathVariable Integer funcionarioId) {
+        Optional<TaxaComissao> obj = service.findByFuncionario(funcionarioId);
+
+        return obj.map(taxaComissao -> ResponseEntity.ok().body(taxaComissao)).orElseGet(() -> ResponseEntity.noContent().build());
     }
 }
 

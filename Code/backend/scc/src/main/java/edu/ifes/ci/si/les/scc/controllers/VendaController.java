@@ -72,4 +72,10 @@ public class VendaController {
         Collection<?> collection = service.findByVendaFuncionarioAndPeriodo(inicio, termino);
         return ResponseEntity.ok().body(collection);
     }
+
+    @RequestMapping(value = "/findByFuncionario/{funcionarioId}", method = RequestMethod.GET)
+    public ResponseEntity<Collection<?>> findByFuncionario(@PathVariable Integer funcionarioId) {
+        Collection<?> collection = service.findByFuncionario(funcionarioId);
+        return ResponseEntity.ok().body(collection);
+    }
 }

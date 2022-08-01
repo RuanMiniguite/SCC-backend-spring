@@ -144,6 +144,10 @@ public class VendaService {
 		return repository.findByVendaFuncionarioAndPeriodo(inicio, termino);
 	}
 
+	public Collection<?> findByFuncionario(Integer funcionarioId) {
+		return repository.findByFuncionario(funcionarioId);
+	}
+
 }
 
 

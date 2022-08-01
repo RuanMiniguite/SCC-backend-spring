@@ -29,7 +29,7 @@ public class TaxaComissao implements Serializable{
     @Digits(integer=6, fraction=2, message = "Valor limite deve ser preenchido com dígitos")
 	private Double valorLimite;
 	
-	@Digits(integer=1, fraction=0, message = "O Tempo de casa deve ser preenchido com um valor inteiro")
+	@Digits(integer=2, fraction=0, message = "O Tempo de casa deve ser preenchido com um valor inteiro")
 	private Integer anoCasa;
 	
 	@Column(length = 25)
