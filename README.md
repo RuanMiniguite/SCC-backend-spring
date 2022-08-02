@@ -50,7 +50,6 @@ O sistema de gerenciamento de concessionária, irá detalhar as finalidades de c
 > Cadastro Tipo Moto;
 > Cadastro Recall;
 > Cadastro Moto;
-
 ```
 
 
