@@ -42,34 +42,35 @@ O sistema de gerenciamento de concessionária, irá detalhar as finalidades de c
 ### Manutenção de Cadastros
 
 ```
-> Cadastro Revisão
-> Cadastro Produto
-> Cadastro Funcionario
-> Cadastro Cliente
-> Cadastro Recall
-> Cadastro Taxa de Comissão
-> Cadastro Moto
-> Cadastro Tipo Moto
+> Cadastro Funcionario;
+> Cadastro Cliente;
+> Cadastro Taxa de Comissão;
+> Cadastro Produto;
+> Cadastro Revisão;
+> Cadastro Tipo Moto;
+> Cadastro Recall;
+> Cadastro Moto;
+
 ```
 
 
 ### Processos de Negócio
 
 ```
-> Realizar Venda
-> Realizar Revisão
-> Pagamento de comissão para funcionário
-> Realizar Recall
+> Realizar Venda;
+> Realizar Revisão;
+> Pagamento de comissão para funcionário;
+> Realizar Realizar Recall;
 ```
 
 
 ### Relatórios
 
 ```
-> Listar comissão recebida por funcionário.
-> Listar as motos vendidas para clientes por tipo em um determinado período
-> Revisão de moto por clientes em um determinado período.
-> Produtos mais usados em um determinado período.
+> Listar Revisão de moto por clientes em um determinado período;
+> Listar Produtos usaso em um determinado período;
+> Listar Motos vendidas por funcionário em um determinado período;
+> Lista Comissão recebida por funcionário;
 ```
 
 
