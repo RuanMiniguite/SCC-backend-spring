@@ -82,7 +82,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- ============== AUTHOR ============== -->
 ## Autores
 
-|[<img alt="LuizHenrique" src="https://github.com/xZANELLA.png?size=300" width="115"><br><sub>@LuizHenrique</sub>](https://github.com/xZANELLA)| [<img alt="Natalia" src="https://github.com/nataliap96.png?size=300" width="115"><br><sub>@NataliaPitanga</sub>](https://github.com/nataliap96)|[<img alt="PatriciaRegina" src="https://github.com/PatriciaDaros.png?size=300" width="115"><br><sub>@PatriciaDaros</sub>](https://github.com/PatriciaDaros)|[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=300" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)|
+|[<img alt="LuizHenrique" src="https://github.com/hencabral.png?size=300" width="115"><br><sub>@LuizHenrique</sub>](https://github.com/hencabral)| [<img alt="Natalia" src="https://github.com/nataliap96.png?size=300" width="115"><br><sub>@NataliaPitanga</sub>](https://github.com/nataliap96)|[<img alt="PatriciaRegina" src="https://github.com/PatriciaDaros.png?size=300" width="115"><br><sub>@PatriciaDaros</sub>](https://github.com/PatriciaDaros)|[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=300" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)|
 |:-|:-|:-|:-|
 
 <br>
