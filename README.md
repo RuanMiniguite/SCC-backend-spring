@@ -1,106 +1,125 @@
+<!--  
+  Ruan Pezzin Miniguite
+  V. 3.0
+-->
+
+
 <!-- ============== HEADER ============== -->
 <div align="center" id="header">
 
-  <a href="https://cachoeiro.ifes.edu.br/"><img src="assets/Ifes01.png" alt="Logo" width="90"></a>
-  
-  <h3>SCC backend Spring</h3>
-  <p>Sistema Controle Concessionária</p>
-</div>
-
-
-<!-- ===== SUMARIO ===== -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#sobre-o-projeto">Sobre o Projeto</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#autores">Autores</a></li>
-  </ol>
-</details>
-
----
-
-
-<!-- ============== SHIELDS ============== -->
-<div align="center">
+  ![SB](https://user-images.githubusercontent.com/82480542/215584978-67c85c6e-0441-4023-b460-17f255f872d5.png)
 
   ![GitHub repo size][GitHub repo size-shields]
   ![GitHub language count][GitHub language count-shields]
   ![GitHub forks][GitHub forks-shields]
+  ![GitHub stars][GitHub stars-shields]
   [![GitHub License][GitHub License-shields]][GitHub License-link]
   [![Website][Website-shields]][Website-link]
-
+  
 </div>
+
+---
+
+<!-- ===== INDEX ===== -->
+<details>
+  <summary>Index</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#language-and-tools">Language and tools</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#author">Author</a></li>
+  </ol>
+</details>
+
 
 
 <!-- ============== ABOUT ============== -->
-## Sobre o Projeto
+## About the project
 
-O sistema de gerenciamento de concessionária, irá detalhar as finalidades de compra, cancelamento de compras, programa de comissão para funcionários, sistema de revisões sistema de recall e realização de orçamentos para uma concessionária de motos. O objetivo deste sistema é a possibilidade de otimização de tempo durante compras, facilitar o gerenciamento de clientes e gerar uma segurança maior para os processos da concessionária, auxiliando no controle das vendas e facilitando a manutenção dos cadastros necessários para o funcionamento adequado do sistema. 
+<p>The dealership management system will detail the purposes of purchasing, canceling purchases, employee commission program, review system, recall system, and budgeting for a motorcycle dealership. The objective of this system is the possibility of optimizing time during purchases, facilitating customer management and generating greater security for the dealership's processes, helping to control sales and facilitating the maintenance of the records necessary for the proper functioning of the system.</p>
 
-
-### Manutenção de Cadastros
-
+#### Registration Maintenance
 ```
-> Cadastro Funcionario;
-> Cadastro Cliente;
-> Cadastro Taxa de Comissão;
-> Cadastro Produto;
-> Cadastro Revisão;
-> Cadastro Tipo Moto;
-> Cadastro Recall;
-> Cadastro Moto;
+> Employee Registration;
+> Customer Registration;
+> Commission Fee Registration;
+> Product Registration;
+> Registration Revision;
+> Motorcycle Type Registration;
+> Registration Recall;
+> Moto Registration;
 ```
 
-
-### Processos de Negócio
-
+#### Business Processes
 ```
-> Realizar Venda;
-> Realizar Revisão;
-> Pagamento de comissão para funcionário;
-> Realizar Realizar Recall;
+> Make the Sale;
+> Perform Review;
+> Commission payment to employee;
+> Perform Perform Recall;
 ```
 
+#### Reports
+```
+> List motorcycle review by customers in a given period;
+> List Products used in a given period;
+> List Motorcycles sold by employee in a given period;
+> List Commission received by employee;
+```
 
-### Relatórios
+
+
+<!-- ============== LANGUAGE ============== -->
+## Language and tools
 
 ```
-> Listar Revisão de moto por clientes em um determinado período;
-> Listar Produtos usaso em um determinado período;
-> Listar Motos vendidas por funcionário em um determinado período;
-> Lista Comissão recebida por funcionário;
+> JAVA 
 ```
+
+
+
+<!-- ============== INSTALLATION ============== -->
+## Installation
+
+#### Git Clone
+```
+Git Clone https://github.com/RuanMiniguite/SCC-backend-spring.git
+```
+
 
 
 <!-- ============== LICENSE ============== -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Copyright © 2023.<br />
+This project is [MIT][GitHub License-link] licensed.
+
 
 
 <!-- ============== AUTHOR ============== -->
-## Autores
+## Author
 
 |[<img alt="LuizHenrique" src="https://github.com/hencabral.png?size=300" width="115"><br><sub>@LuizHenrique</sub>](https://github.com/hencabral)| [<img alt="Natalia" src="https://github.com/nataliap96.png?size=300" width="115"><br><sub>@NataliaPitanga</sub>](https://github.com/nataliap96)|[<img alt="PatriciaRegina" src="https://github.com/PatriciaDaros.png?size=300" width="115"><br><sub>@PatriciaDaros</sub>](https://github.com/PatriciaDaros)|[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=300" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)|
 |:-|:-|:-|:-|
 
-<br>
 <p align="right">(<a href="#header">back to top</a>)</p>
+
+
 
 
 <!-- ============== LINKs ============== -->
 <!-- Alterar link -->
-[GitHub License-link]: https://github.com/RuanMiniguite/SCC-backend-spring/blob/f479c14bff9463231113113601afab8222f51a76/LICENSE
-
+[Site-link]: https://github.com/RuanMiniguite/SCC-backend-spring
+[GitHub License-link]: https://github.com/RuanMiniguite/SCC-backend-spring/blob/957b44c7d98a0c33f1fa6438f71b7176f387a3f0/LICENSE
 
 <!-- Alterar caminho para repositorio [Template-Readme] -->
-[GitHub repo size-shields]: https://img.shields.io/github/repo-size/RuanMiniguite/SCC-backend-spring?style=for-the-badge
-[GitHub language count-shields]: https://img.shields.io/github/languages/count/RuanMiniguite/SCC-backend-spring?style=for-the-badge
-[GitHub forks-shields]: https://img.shields.io/github/forks/RuanMiniguite/SCC-backend-spring?style=for-the-badge
+[GitHub repo size-shields]: https://img.shields.io/github/repo-size/RuanMiniguite/SCC-backend-spring?style=for-the-badge&color=292929
+[GitHub language count-shields]: https://img.shields.io/github/languages/count/RuanMiniguite/SCC-backend-spring?style=for-the-badge&color=292929
+[GitHub forks-shields]: https://img.shields.io/github/forks/RuanMiniguite/SCC-backend-spring?style=for-the-badge&color=292929
+[GitHub stars-shields]: https://img.shields.io/github/stars/RuanMiniguite/SCC-backend-spring?style=for-the-badge&color=292929
 
-<!-- Shields -->
-[GitHub License-shields]: https://img.shields.io/cocoapods/l/m?down_color=292929&up_color=292929&style=for-the-badge
+<!-- Permalink Shields-->
+[GitHub License-shields]: https://img.shields.io/cocoapods/l/m?down_color=292929&up_color=292929&color=292929&style=for-the-badge
 [Site-shields]: https://img.shields.io/badge/Site-Live-292929?style=for-the-badge&logo=web&logoColor=white
 [Website-link]: https://github.com/RuanMiniguite/Commit-Message
 [Website-shields]: https://img.shields.io/website?down_color=292929&down_message=404&style=for-the-badge&logo=github&up_color=292929&up_message=Commit&url=https%3A%2F%2Fgithub.com%2FRuanMiniguite%2FCommit-Message
